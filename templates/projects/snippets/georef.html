@@ -1,0 +1,333 @@
+<! -- Fix for Bootstrap css with Google Maps https://github.com/twitter/bootstrap/issues/1552 -->
+<style type="text/css">
+    .map_canvas label {
+        width: auto;
+        display: inline;
+    }
+    
+    .map_canvas img {
+        max-width: none;
+    }
+    
+    .layersDiv label {
+        color: white;
+    }
+    
+    .form-control {
+        height: 35px;
+    }
+</style>
+<link rel="stylesheet" href="/static/map-extra/leaflet.css" />
+<link rel="stylesheet" href="/static/map-extra/leaflet.draw.css" />
+<link rel="stylesheet" href="/static/map-extra/leaflet-measure.css" />
+<link rel="stylesheet" href="/static/map-extra/coordinates/Leaflet.Coordinates-0.1.4.css" />
+<link rel="stylesheet" href="/static/map-extra/coordinates/Leaflet.Coordinates-0.1.4.ie.css" />
+<script type="text/javascript" src="http://www.openlayers.org/api/OpenLayers.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="/static/map-extra/leaflet-src.js"></script>
+<script src="/static/map-extra/Leaflet.draw.js"></script>
+<script src="/static/map-extra/Leaflet.Draw.Event.js"></script>
+<script src="/static/map-extra/Toolbar.js"></script>
+<script src="/static/map-extra/Tooltip.js"></script>
+<script src="/static/map-extra/Control.Draw.js"></script>
+<script src="/static/map-extra/leaflet-measure.js"></script>
+<script src="/static/map-extra/ext/GeometryUtil.js"></script>
+<script src="/static/map-extra/ext/LatLngUtil.js"></script>
+<script src="/static/map-extra/ext/LineUtil.Intersect.js"></script>
+<script src="/static/map-extra/ext/Polygon.Intersect.js"></script>
+<script src="/static/map-extra/ext/Polyline.Intersect.js"></script>
+<script src="/static/map-extra/ext/TouchEvents.js"></script>
+<script src="/static/map-extra/draw/DrawToolbar.js"></script>
+<script src="/static/map-extra/draw/handler/Draw.Feature.js"></script>
+<script src="/static/map-extra/draw/handler/Draw.SimpleShape.js"></script>
+<script src="/static/map-extra/draw/handler/Draw.Polyline.js"></script>
+<script src="/static/map-extra/draw/handler/Draw.Marker.js"></script>
+<script src="/static/map-extra/draw/handler/Draw.Circle.js"></script>
+<script src="/static/map-extra/draw/handler/Draw.CircleMarker.js"></script>
+<script src="/static/map-extra/draw/handler/Draw.Polygon.js"></script>
+<script src="/static/map-extra/draw/handler/Draw.Rectangle.js"></script>
+<script src="/static/map-extra/edit/EditToolbar.js"></script>
+<script src="/static/map-extra/edit/handler/EditToolbar.Edit.js"></script>
+<script src="/static/map-extra/edit/handler/EditToolbar.Delete.js"></script>
+<script src="/static/map-extra/edit/handler/Edit.Poly.js"></script>
+<script src="/static/map-extra/edit/handler/Edit.SimpleShape.js"></script>
+<script src="/static/map-extra/edit/handler/Edit.Rectangle.js"></script>
+<script src="/static/map-extra/edit/handler/Edit.Marker.js"></script>
+<script src="/static/map-extra/edit/handler/Edit.CircleMarker.js"></script>
+<script src="/static/map-extra/edit/handler/Edit.Circle.js"></script>
+<script src="/static/map-extra/wicket/wicket.js"></script>
+<script src="/static/map-extra/wicket/wicket-leaflet.js"></script>
+<script src="/static/map-extra/coordinates/Leaflet.Coordinates-0.1.4.min.js"></script>
+<script src="/static/map-extra/map.common.js"></script>
+<script src="/static/map-extra/leaflet-google.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJDtEeoy7Sc9pij2TAoVnmTwA34Q-2VHk" type="text/javascript"></script>
+<script src="/static/map-extra/json2.js"></script>
+<script src="/static/map-extra/jquery.serializejson.min.js" type="text/javascript"></script>
+<div class="row">
+    <div class="skeleton col-md-12">
+        <!-- <p>Locality: <span id="task-id" class="label label-info">#</span></p> -->
+        <p><strong>Click on the circle button to draw an area on the map</strong></p>
+        <div class="row">
+            <div id="question" class="col-md-9">
+                <div id="map"></div>
+                <div>
+                    <p/> You have completed: <span id="done" class="label label-info">#</span> tasks from <span id="total" class="label label-info">#</span>
+                    </p>
+                    <div class="progress progress-striped">
+                        <div id="progress" rel="tooltip" title="#" class="progress-bar" role="progressbar" style="width: 0%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="answer" class="col-md-3">
+                <form id="dataForm" role="form">
+                    <div class="row">
+                        <div class="form-group" style="display:none">
+                            <label class="control-label" for=" dugnad">Dugnad</label>
+                            <input readonly="True" type="text" class="form-control form-control-sm" id="dugnad" value="" name="dugnad" />
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label class="control-label" for=" scientificName">Vetenskapligt namn / Scientific
+                                name</label>
+                            <input readonly="True" type="text" class="form-control form-control-sm" id="scientificName" value="" name="scientificName" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label class="control-label" for="recordedBy">Insamlare / Collector</label>
+                            <input readonly="True" type="text" class="form-control form-control-sm" id="recordedBy" value="" name="recordedBy" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="control-label" for=" kollektID">Kollekt ID</label>
+                            <input readonly="True" type="text" class="form-control form-control-sm" id="kollektID" value="" name="kollektID" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label class="control-label" for="recordNumber">Insamlingsnummer / Collector
+                                    number</label>
+                            <input readonly="True" type="text" class="form-control form-control-sm" id="recordNumber" value="" name="recordNumber" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="control-label" for="eventDate">Insamlings datum / Collection date</label>
+                            <input readonly="True" type="text" class="form-control form-control-sm" id="eventDate" value="" name="eventDate" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label class="control-label" for="stateProvince">Landskap / Province</label>
+                            <input readonly="True" type="text" class="form-control form-control-sm" id="stateProvince" value="" name="stateProvince" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="control-label" for="county"> Socken / Parish</label>
+                            <input readonly="True" type="text" class="form-control form-control-sm" id="county" value="" name="county" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="locality"> Lokal / Locality</label>
+                        <input readonly="True" class="form-control form-control-sm" id="locality" name="locality" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="habitat">Habitat / Habitat</label>
+                        <input readonly="True" type="text" class="form-control form-control-sm" id="habitat" name="habitat" />
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label class="control-label" for="decimalLatitude">Latitud /Latitude</label>
+                            <input type="text" class="form-control form-control-sm" id="decimalLatitude" name="decimalLatitude" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="control-label" for="decimalLongitude">Longitud / Longitude</label>
+                            <input type="text" class="form-control form-control-sm" id="decimalLongitude" name="decimalLongitude" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label class="control-label" for="coordinateUncertaintyInMeters">Osäkerhet / Uncertainity (m)</label>
+                            <input type="text" class="form-control form-control-sm" id="coordinateUncertaintyInMeters" name="coordinateUncertaintyInMeters" />
+                        </div>
+                        <div class="form-group col-md-6" style="display:none">
+                            <label class="control-label" for="footprintWKT">FootprintWkt</label>
+                            <input type="text" class="form-control form-control-sm" id="footprintWKT" name="footprintWKT" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button id="answerbtn" class="btn btn-success btn-submit btn-block"><i
+                                    class="icon-check icon-white"></i> Save </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- PyBossa interface -->
+<script type="text/javascript">
+    var MAP_VAR = {};
+    (function() {
+        function loadUserProgress() {
+            pybossa.userProgress('{{project.short_name}}').done(function(data) {
+                console.log(data);
+                var pct = Math.round((data.done * 100) / data.total);
+                $("#progress").css("width", pct.toString() + "%");
+                $("#progress").attr("title", pct.toString() + "% completed!");
+                //$("#progress").tooltip({ 'placement': 'left' });
+                $("#total").text(data.total);
+                $("#done").text(data.done);
+            });
+        }
+
+        pybossa.taskLoaded(function(task, deferred) {
+            if (!$.isEmptyObject(task)) {
+                deferred.resolve(task);
+            } else {
+                deferred.resolve(task);
+            }
+        });
+
+        pybossa.presentTask(function(task, deferred) {
+            if (!$.isEmptyObject(task)) {
+
+                if (task.state == 'completed') {
+                    pybossaNotify("This task has been completed.", true, "info");
+                }
+                var div_map = $("<div/>", {
+                    'id': "map_" + task.id,
+                    'class': 'map_canvas'
+                });
+                div_map.css("height", "700px");
+                div_map.css("display", "none");
+
+                // We need to append the div element asap otherwise OpenLayers will fail
+                $("#map").append(div_map);
+
+                var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+                var osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+                var defaultBaseLayer = L.tileLayer(osmUrl, {
+                    //maxZoom: 20,
+                    attribution: osmAttrib
+                });
+
+                // Global var to store map config
+                MAP_VAR = {
+                    map: null,
+                    defaultLatitude: "59.858",
+                    defaultLongitude: "17.638",
+                    defaultZoom: "15",
+                    overlays: {},
+                    layerControl: null,
+                    baseLayers: {
+                        "OpenStreetMap": defaultBaseLayer,
+                        "Road": new L.Google('ROADMAP'),
+                        "Terrain": new L.Google('TERRAIN'),
+                        "Satellite": new L.Google('HYBRID')
+                    },
+                };
+
+                MAP_VAR.map = new L.Map('map_' + task.id, {
+                    center: new L.LatLng(MAP_VAR.defaultLatitude, MAP_VAR.defaultLongitude),
+                    zoom: MAP_VAR.defaultZoom
+                });
+
+                //add edit drawing toolbar
+                // Initialise the FeatureGroup to store editable layers
+                MAP_VAR.drawnItems = new L.FeatureGroup();
+                MAP_VAR.map.addLayer(MAP_VAR.drawnItems);
+
+                // Initialise the draw control and pass it the FeatureGroup of editable layers
+                MAP_VAR.drawControl = new L.Control.Draw({
+                    edit: {
+                        featureGroup: MAP_VAR.drawnItems
+                    },
+                    draw: {
+                        polyline: false,
+                        rectangle: false,
+                        circle: {
+                            shapeOptions: {
+                                color: '#eb6534'
+                            }
+                        },
+                        marker: false,
+                        polygon: false,
+                        circlemarker: false
+                    }
+                });
+                MAP_VAR.map.addControl(MAP_VAR.drawControl);
+
+                MAP_VAR.map.on('draw:created', function(e) {
+                    //setup onclick event for this object
+                    var layer = e.layer;
+                    MAP_VAR.drawnItems.clearLayers();
+                    georeference(layer);
+                    //generatePopup(layer, layer._latlng);
+                    MAP_VAR.drawnItems.addLayer(layer);
+                    //addClickEventForVector(layer);
+                });
+
+                MAP_VAR.map.on('draw:edited', function(e) {
+                    //setup onclick event for this object
+                    var layers = e.layers;
+                    layers.eachLayer(function(layer) {
+                        //MAP_VAR.drawnItems.clearLayers();
+                        georeference(layer);
+                        //generatePopup(layer, layer._latlng);
+                        MAP_VAR.drawnItems.addLayer(layer);
+                        //addClickEventForVector(layer);
+                    });
+                });
+
+                MAP_VAR.map.on('draw:deleted', function(e) {
+                    //setup onclick event for this object
+                    var layer = e.layer;
+                    removeLayer(layer);
+                    setGeoreferenceonUI();
+                    MAP_VAR.drawnItems.clearLayers();
+                });
+
+                //add the default base layer
+                MAP_VAR.map.addLayer(defaultBaseLayer);
+
+                L.control.coordinates({
+                    position: "bottomright",
+                    useLatLngOrder: true
+                }).addTo(MAP_VAR.map); // coordinate plugin
+
+                MAP_VAR.layerControl = L.control.layers(MAP_VAR.baseLayers, MAP_VAR.overlays, {
+                    collapsed: true,
+                    position: 'topright'
+                });
+                MAP_VAR.layerControl.addTo(MAP_VAR.map);
+
+                L.Util.requestAnimFrame(MAP_VAR.map.invalidateSize, MAP_VAR.map, !1, MAP_VAR.map._container);
+                L.Browser.any3d = false; // FF bug prevents selects working properly
+                loadUserProgress();
+                $("#question h1").text(task.info.question);
+                $("#task-id").text(task.id);
+                $("#dugnad").val(task.info.dugnad);
+                $("#kollektID").val(task.info.kollektID);
+                $("#scientificName").val(task.info.taxon);
+                $("#recordedBy").val(task.info.insamlare);
+                $("#recordNumber").val(task.info.insamlingsnummer);
+                $("#eventDate").val(task.info.datum);
+                $("#stateProvince").val(task.info.landskap);
+                $("#county").val(task.info.socken);
+                $("#locality").val(task.info.lokal);
+                $("#habitat").val(task.info.habitat);
+                $("#map_" + task.id).show();
+                $(".btn-submit").off('click').on('click', function(evt) {
+                    var answer = $("#dataForm").serializeJSON();
+                    console.log(answer);
+                    pybossa.saveTask(task.id, answer).done(function(data) {
+                        $("#map_" + task.id).remove();
+                    });
+                    deferred.resolve();
+                });
+            } else {
+                $(".skeleton").hide();
+                pybossaNotify("Thanks! You have participated in all available tasks. Enjoy some of your time!", true, "info");
+            }
+        });
+
+        pybossa.run('{{project.short_name}}');
+    })();
+</script>
