@@ -1,6 +1,6 @@
 {% import "account/_helpers.html" as account_helper %}
 {% macro render_pagination(pagination, handle) %}
-<div class="container">
+<div class="container-fluid">
 <div class="col-md-offset-3 col-md-9 text-center">
 <ul class="pagination pagination-sm">
   {% if pagination.has_prev %}
@@ -226,7 +226,7 @@
 <section id="{{id}}" class="account {{title |lower }}-projects">
 {% endif %}
     {% if container %}
-    <div class="container">
+    <div class="container-fluid">
     {% endif %}
         <div class="row">
             <div class="{{title_class}}">
