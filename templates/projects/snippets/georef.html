@@ -4,15 +4,15 @@
         width: auto;
         display: inline;
     }
-    
+
     .map_canvas img {
         max-width: none;
     }
-    
+
     .layersDiv label {
         color: white;
     }
-    
+
     .form-control {
         height: 35px;
     }
@@ -66,7 +66,15 @@
 <div class="row">
     <div class="skeleton col-md-12">
         <!-- <p>Locality: <span id="task-id" class="label label-info">#</span></p> -->
-        <p><strong>Click on the circle button to draw an area on the map</strong></p>
+        <div class="row" >
+            <div class="col-md-9">
+              <strong>Click on the circle button to draw an area on the map</strong>
+              <button class="btn btn-primary btn-sm pull-right" data-toggle="modal" data-target="#myModal">
+                  <i class="fa fa-book"></i> Help</a>
+              </button>
+            </div>
+        </div>
+        <p>
         <div class="row">
             <div id="question" class="col-md-9">
                 <div id="map"></div>
@@ -152,7 +160,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <button id="answerbtn" class="btn btn-success btn-submit btn-block"><i
+                            <button id="answerbtn" class="btn btn-primary btn-success btn-submit btn-block"><i
                                     class="icon-check icon-white"></i> Save </button>
                         </div>
                     </div>
@@ -161,6 +169,112 @@
         </div>
     </div>
 </div>
+
+<!-- Modal start -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal header -->
+            <div class="modal-header">
+                <h3>How to georeference ?</h3>
+            </div>
+
+            <!-- Step 1 of the tutorial -->
+            <div id="0" class="modal-body" style="display:none">
+                <p>
+                    Georeferencing is done by drawing a circle on the map to obtain the coordinates and the uncertainty of the corordinate in meters.
+                    The fields to consider while georeferencing are:
+                </p>
+                <ul>
+                  <li>Landskap / Province</li>
+                  <li>Socken / Parish</li>
+                  <li>Lokal / Locality</li>
+                  <li>Habitat / Habitat</li>
+                </ul>
+                <p>An example can be seen below.</p>
+                <img src="/static/img/georef/location-info.png" />
+            </div>
+
+            <!-- Step 2 of the tutorial -->
+            <div id="1" class="modal-body" style="display:none">
+                <p>
+                    Use the toolbar on the left-top corner of the map to manipulate the map and geoference as shown in the figure.
+                </p>
+                <img src="/static/img/georef/georef.png" />
+            </div>
+
+            <div id="2" class="modal-body" style="display:none">
+
+                <p>The following fields should be filled and checked before submission.</p>
+                <ul>
+                    <li>Latitud /Latitude</li>
+                    <li>Longitud / Longitude</li>
+                    <li>Osäkerhet / Uncertainity (m)</li>
+                </ul>
+                <p>An example can be seen below.</p>
+
+                <img src="/static/img/georef/result.png" />
+
+            </div>
+
+            <!-- End of stepped modal body -->
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <a id="prevBtn" href="#" onclick="showStep('prev')" class="btn btn-primary btn-default">Previous</a>
+                <a id="nextBtn" href="#" onclick="showStep('next')" class="btn btn-primary btn-success">Next</a>
+                <button id="closeBtn" data-dismiss="modal" onclick="showStep('finish')" class="btn btn-primary" style="display:none">Back to task</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Client side scripts -->
+<script>
+    // Quick fix for IE8
+    Modernizr.load({
+        test: window.JSON,
+        nope: '/static/js/vendor/json2.min.js'
+    });
+</script>
+
+<!-- Step through modals -->
+<script type="text/javascript">
+    var step = -1;
+
+    function showStep(action) {
+        $("#" + step).hide();
+        if (action == 'next') {
+            step = step + 1;
+        }
+        if (action == 'prev') {
+            step = step - 1;
+        }
+        if (step == 0) {
+            $("#prevBtn").hide();
+        } else {
+            $("#prevBtn").show();
+        }
+
+        // this line below needs to match the id of the last modal div. If you have 4 divs, you need to
+        // change this to step = 3 and if you have 2 you would say step = 1. Id starts at 0.
+
+        if (step == 2) {
+            $("#nextBtn").hide();
+            $("#closeBtn").show();
+        }
+        if (action == 'finish') {
+            step = 0;
+            $("#closeBtn").hide();
+            $("#prevBtn").hide();
+            $("#nextBtn").show();
+        }
+        $("#" + step).show();
+    }
+    showStep('next');
+    $("#modal").modal('show');
+</script>
+
 <!-- PyBossa interface -->
 <script type="text/javascript">
     var MAP_VAR = {};
