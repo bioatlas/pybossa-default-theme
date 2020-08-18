@@ -1,0 +1,46 @@
+footer {
+    padding: 0px 0 0px;
+}
+
+section {
+    padding-top: 25px;
+}
+
+
+.project-main {
+    padding-top: 25px;
+}
+
+.navbar-brand>img {
+    margin-top: 0;
+    max-width: 280px;
+}
+
+.alert-text.text-creativecommons {
+    color: #fff;
+}
+
+#pybossa-notification {
+    top: 50px;
+    z-index: 2000;
+}
+
+.stats {
+    margin-top: 25px;
+}
+
+.btn{
+    color: #fff;
+    background-color: #c44d34;
+    border-color: #b0452f
+}
+
+.table>tbody>tr>td{
+      color: #c44d34;
+}
+
+/*
+.table>tbody>tr>td>a{
+      color: #c44d34;
+}
+*/
