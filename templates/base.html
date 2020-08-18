@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    {% if brand == title %}
+
+<head>
+    <meta charset="utf-8"> {% if brand == title %}
     <title>{{ title }} - PyBossa by Scifabric</title>
     {% else %}
     <title>{{ brand }} &middot; {{ title | safe}} - PyBossa by Scifabric</title>
@@ -12,13 +12,12 @@
     <meta name="author" content="Scifabric">
 
     <!-- Le styles -->
-    {% assets filters="libsass", output="css/gen/pybossa.min.css",
-              depends="sass/**/*.scss", 
-              "sass/_pybossa.scss"%}
-        <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}">
-    {% endassets %}
+    {% assets filters="libsass", output="css/gen/pybossa.min.css", depends="sass/**/*.scss", "sass/_pybossa.scss"%}
+    <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}"> {% endassets %}
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/ala-styles.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/bioatlas.css">
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -50,33 +49,26 @@
     {% include '_ga.html' ignore missing %}
     <!-- Google Custom Search -->
     {% include '_gcs.html' ignore missing %}
-  </head>
+</head>
 
-  <body>
-    {% set active_page = active_page | default('index') -%}
-    {% set active_project  = active_project | default('none') -%}
-    {% include "_navbar.html" %}
-    {% if not current_user.is_anonymous %}
+<body>
+    {% set active_page = active_page | default('index') -%} {% set active_project = active_project | default('none') -%} {% include "_navbar.html" %} {% if not current_user.is_anonymous %}
     <!-- checkpoint::logged-in::{{current_user.name}} -->
-    {% endif %}
-    {% block content %}{% endblock %}
-    {% include "_footer.html" %}
+    {% endif %} {% block content %}{% endblock %} {% include "_footer.html" %}
     <!-- Le javascript -->
     <script id="cookies_warning">
-        window.cookieconsent_options = {"message":"Cookies help us to deliver our services. By using our services, you agree to our use of cookies.","dismiss":"Got it!","learnMore":"Learn More.","link":"{{url_for('help.cookies_policy')}}","theme":"dark-bottom"};
+        window.cookieconsent_options = {
+            "message": "Cookies help us to deliver our services. By using our services, you agree to our use of cookies.",
+            "dismiss": "Got it!",
+            "learnMore": "Learn More.",
+            "link": "{{url_for('help.cookies_policy')}}",
+            "theme": "dark-bottom"
+        };
     </script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
-    {% if not jstop %}
-    {% assets filters="jsmin", output="js/gen/default.min.js",
-              "js/vendor/jquery-2.2.3.js", "js/vendor/bootstrap.js", 
-              "js/vendor/modernizr.min.js", "js/flashmessages.js", 
-              "js/vendor/cookieconsent.min.js"
-              %}
-              <script type="text/javascript" src="{{ ASSET_URL }}"></script>
-    {% endassets %}
-    {% endif %}
-    {% block extrajs %}
-    {% endblock %}
-    {% include "_flash_messages.html" %}
-  </body>
+    {% if not jstop %} {% assets filters="jsmin", output="js/gen/default.min.js", "js/vendor/jquery-2.2.3.js", "js/vendor/bootstrap.js", "js/vendor/modernizr.min.js", "js/flashmessages.js", "js/vendor/cookieconsent.min.js" %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %} {% endif %} {% block extrajs %} {% endblock %} {% include "_flash_messages.html" %}
+</body>
+
 </html>
