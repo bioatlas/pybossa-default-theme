@@ -67,16 +67,15 @@
     <div class="skeleton col-md-12">
         <!-- <p>Locality: <span id="task-id" class="label label-info">#</span></p> -->
         <div class="row" >
-            <div class="col-md-9">
+            <div class="col-md-8">
               <strong>Click on the circle button to draw an area on the map</strong>
               <button class="btn btn-primary btn-sm pull-right" data-toggle="modal" data-target="#myModal">
-                  <i class="fa fa-book"></i> Help</a>
-              </button>
+                  <i class="fa fa-book"></i> Help </button>
             </div>
         </div>
         <p>
         <div class="row">
-            <div id="question" class="col-md-9">
+            <div id="question" class="col-md-8">
                 <div id="map"></div>
                 <div>
                     <p/> You have completed: <span id="done" class="label label-info">#</span> tasks from <span id="total" class="label label-info">#</span>
@@ -86,7 +85,7 @@
                     </div>
                 </div>
             </div>
-            <div id="answer" class="col-md-3">
+            <div id="answer" class="col-md-4">
                 <form id="dataForm" role="form">
                     <div class="row">
                         <div class="form-group" style="display:none">
@@ -104,20 +103,23 @@
                             <label class="control-label" for="recordedBy">Insamlare / Collector</label>
                             <input readonly="True" type="text" class="form-control form-control-sm" id="recordedBy" value="" name="recordedBy" />
                         </div>
-                        <div class="form-group col-md-6">
-                            <label class="control-label" for=" kollektID">Kollekt ID</label>
-                            <input readonly="True" type="text" class="form-control form-control-sm" id="kollektID" value="" name="kollektID" />
+                        <div class="form-group col-md-3">
+                            <label class="control-label" for="recordNumber">Nummer / Number</label>
+                            <input readonly="True" type="text" class="form-control form-control-sm" id="recordNumber" value="" name="recordNumber" />
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label class="control-label" for="eventDate">Datum / Date</label>
+                            <input readonly="True" type="text" class="form-control form-control-sm" id="eventDate" value="" name="eventDate" />
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <label class="control-label" for="recordNumber">Insamlingsnummer / Collector
-                                    number</label>
-                            <input readonly="True" type="text" class="form-control form-control-sm" id="recordNumber" value="" name="recordNumber" />
+                            <label class="control-label" for="katalognummer">Katalognummer / Catalog Number</label>
+                            <input readonly="True" type="text" class="form-control form-control-sm" id="katalognummer" value="" name="katalognummer" />
                         </div>
                         <div class="form-group col-md-6">
-                            <label class="control-label" for="eventDate">Insamlings datum / Collection date</label>
-                            <input readonly="True" type="text" class="form-control form-control-sm" id="eventDate" value="" name="eventDate" />
+                            <label class="control-label" for=" kollektID">Kollekt ID</label>
+                            <input readonly="True" type="text" class="form-control form-control-sm" id="kollektID" value="" name="kollektID" />
                         </div>
                     </div>
                     <div class="row">
@@ -158,13 +160,17 @@
                             <input type="text" class="form-control form-control-sm" id="footprintWKT" name="footprintWKT" />
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <button id="answerbtn" class="btn btn-primary btn-success btn-submit btn-block"><i
-                                    class="icon-check icon-white"></i> Save </button>
-                        </div>
-                    </div>
+                    <input type="hidden" id="skipFlag" name="skipFlag"/>
+                    <input type="hidden" id="skipReason" name="skipReason"/>
                 </form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <button id="skipbtn" class="btn btn btn-primary" data-toggle="modal" data-target="#skipModal">Skip</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button id="answerbtn" class="btn btn-primary btn-success btn-submit btn-block">Save</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -229,6 +235,29 @@
     </div>
 </div>
 
+<div class="modal fade" id="skipModal" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal header -->
+            <div class="modal-header">
+                <h3>Please select a reason to skip</h3>
+            </div>
+            <div class="modal-body">
+              <select name="skipReasons" id="skipReasons">
+                <option value="incomplete_location">Incomplete Location</option>
+                <option value="ambiguous">Ambiguous Location</option>
+                <option value="others">Others</option>
+              </select>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button id="skipCancelBtn" data-dismiss="modal" onclick="cancelSkip()" class="btn btn-primary">Cancel</button>
+                <button id="skipOKBtn" data-dismiss="modal" onclick="okSkip()" class="btn btn-primary btn-success btn-submit">Skip</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Client side scripts -->
 <script>
     // Quick fix for IE8
@@ -272,7 +301,17 @@
         $("#" + step).show();
     }
     showStep('next');
-    $("#modal").modal('show');
+
+    function cancelSkip(){
+      $("#skipFlag").val(false);
+      $("#skipReason").val("");
+    }
+
+    function okSkip(){
+      $("#skipFlag").val(true);
+      $("#skipReason").val($("#skipReasons").val());
+    }
+
 </script>
 
 <!-- PyBossa interface -->
@@ -281,11 +320,10 @@
     (function() {
         function loadUserProgress() {
             pybossa.userProgress('{{project.short_name}}').done(function(data) {
-                console.log(data);
                 var pct = Math.round((data.done * 100) / data.total);
                 $("#progress").css("width", pct.toString() + "%");
                 $("#progress").attr("title", pct.toString() + "% completed!");
-                //$("#progress").tooltip({ 'placement': 'left' });
+                $("#progress").tooltip({ 'placement': 'left' });
                 $("#total").text(data.total);
                 $("#done").text(data.done);
             });
@@ -293,6 +331,7 @@
 
         pybossa.taskLoaded(function(task, deferred) {
             if (!$.isEmptyObject(task)) {
+                loadUserProgress();
                 deferred.resolve(task);
             } else {
                 deferred.resolve(task);
@@ -301,7 +340,6 @@
 
         pybossa.presentTask(function(task, deferred) {
             if (!$.isEmptyObject(task)) {
-
                 if (task.state == 'completed') {
                     pybossaNotify("This task has been completed.", true, "info");
                 }
@@ -327,7 +365,7 @@
                     map: null,
                     defaultLatitude: "59.858",
                     defaultLongitude: "17.638",
-                    defaultZoom: "15",
+                    defaultZoom: "11",
                     overlays: {},
                     layerControl: null,
                     baseLayers: {
@@ -414,11 +452,14 @@
 
                 L.Util.requestAnimFrame(MAP_VAR.map.invalidateSize, MAP_VAR.map, !1, MAP_VAR.map._container);
                 L.Browser.any3d = false; // FF bug prevents selects working properly
-                loadUserProgress();
+
+                $("#skipFlag").val(false);
+                $("#skipReason").val("");
                 $("#question h1").text(task.info.question);
                 $("#task-id").text(task.id);
                 $("#dugnad").val(task.info.dugnad);
                 $("#kollektID").val(task.info.kollektID);
+                $("#katalognummer").val(task.info.katalognummer);
                 $("#scientificName").val(task.info.taxon);
                 $("#recordedBy").val(task.info.insamlare);
                 $("#recordNumber").val(task.info.insamlingsnummer);
@@ -427,14 +468,33 @@
                 $("#county").val(task.info.socken);
                 $("#locality").val(task.info.lokal);
                 $("#habitat").val(task.info.habitat);
+                $("#decimalLatitude").val(task.info.decimalLatitude);
+                $("#decimalLongitude").val(task.info.decimalLongitude);
+                $("#coordinateUncertaintyInMeters").val(task.info.coordinateUncertaintyInMeters);
+                $("#footprintWKT").val(task.info.footprintWKT);
                 $("#map_" + task.id).show();
                 $(".btn-submit").off('click').on('click', function(evt) {
                     var answer = $("#dataForm").serializeJSON();
-                    console.log(answer);
-                    pybossa.saveTask(task.id, answer).done(function(data) {
-                        $("#map_" + task.id).remove();
-                    });
-                    deferred.resolve();
+                    if (answer.skipFlag === "true" ){
+                        answer.decimalLatitude ="";
+                        answer.decimalLongitude ="";
+                        answer.coordinateUncertaintyInMeters ="";
+                        pybossa.saveTask(task.id, answer).done(function(data) {
+                            $("#map_" + task.id).remove();
+                        });
+                        deferred.resolve();
+                        //console.log(answer);
+                    }else {
+                       if (!(answer.decimalLatitude === "" ||  answer.decimalLongitude === "")){
+                          pybossa.saveTask(task.id, answer).done(function(data) {
+                                $("#map_" + task.id).remove();
+                            });
+                            deferred.resolve();
+                            //console.log(answer);
+                       }else {
+                            alert("Georefencing incomplete ! Please Georeference or Skip !")
+                       }
+                    }
                 });
             } else {
                 $(".skeleton").hide();
