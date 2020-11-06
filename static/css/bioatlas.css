@@ -1,11 +1,11 @@
 footer {
     padding: 0px 0 0px;
+    bottom: 0px;
 }
 
 section {
     padding-top: 25px;
 }
-
 
 .project-main {
     padding-top: 25px;
@@ -44,3 +44,15 @@ section {
       color: #c44d34;
 }
 */
+.imageLead {
+    background: url("/static/img/body-background.jpg");
+}
+
+img{
+    max-width: 100%;
+    display: block; /* remove extra space below image */
+}
+
+section.home.projects{
+  margin-top:0px !important;
+}
