@@ -1,17 +1,18 @@
-# Translations template for PROJECT.
+# Swedish translations for PROJECT.
 # Copyright (C) 2020 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2020-11-06 00:21+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2020-10-28 18:20+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: sv\n"
+"Language-Team: sv <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,45 +20,45 @@ msgstr ""
 
 #: themes/default/templates/_navbar.html:7
 msgid "Menu"
-msgstr ""
+msgstr "Meny"
 
 #: themes/default/templates/_navbar.html:13
 msgid "Home"
-msgstr ""
+msgstr "Hem"
 
 #: themes/default/templates/_navbar.html:14
 #: themes/default/templates/account/index.html:15
 msgid "Community"
-msgstr ""
+msgstr "Gemenskap"
 
 #: themes/default/templates/_navbar.html:15
 #: themes/default/templates/projects/index.html:30
 #: themes/default/templates/stats/global.html:81
 msgid "Projects"
-msgstr ""
+msgstr "Projekt"
 
 #: themes/default/templates/_navbar.html:16
 msgid "Create"
-msgstr ""
+msgstr "Skapa"
 
 #: themes/default/templates/_navbar.html:17
 #: themes/default/templates/home/_about.html:5
 msgid "About"
-msgstr ""
+msgstr "Om"
 
 #: themes/default/templates/_navbar.html:24
 msgid "My Profile"
-msgstr ""
+msgstr "Min Profil"
 
 #: themes/default/templates/_navbar.html:25
 #: themes/default/templates/account/_helpers.html:7
 msgid "My Projects"
-msgstr ""
+msgstr "Mina Projekt"
 
 #: themes/default/templates/_navbar.html:26
 #: themes/default/templates/account/_helpers.html:11
 msgid "My Settings"
-msgstr ""
+msgstr "Mina Inställningar"
 
 #: themes/default/templates/_navbar.html:29
 #: themes/default/templates/account/_helpers.html:9
@@ -68,97 +69,97 @@ msgstr ""
 #: themes/default/templates/admin/update_category.html:5
 #: themes/default/templates/admin/users.html:6
 msgid "Admin Site"
-msgstr ""
+msgstr "Admin Hemsida"
 
 #: themes/default/templates/_navbar.html:32
 msgid "Sign Out"
-msgstr ""
+msgstr "Logga Ut"
 
 #: themes/default/templates/_navbar.html:36
 #: themes/default/templates/account/signin.html:8
 #: themes/default/templates/account/signin.html:10
 msgid "Sign in"
-msgstr ""
+msgstr "Logga In"
 
 #: themes/default/templates/account/_helpers.html:6
 msgid "My Account"
-msgstr ""
+msgstr "Mina Konto"
 
 #: themes/default/templates/account/_helpers.html:17
 msgid "I've done"
-msgstr ""
+msgstr "Jag har gjort"
 
 #: themes/default/templates/account/_helpers.html:17
 msgid "tasks for the @PyBossa project:"
-msgstr ""
+msgstr "uppgifter för @PyBossa projektet"
 
 #: themes/default/templates/account/_helpers.html:17
 msgid "Do you want to help?"
-msgstr ""
+msgstr "Vill du hjälpa"
 
 #: themes/default/templates/account/_helpers.html:18
 msgid "Tweet"
-msgstr ""
+msgstr "Tweet"
 
 #: themes/default/templates/account/_helpers.html:37
 msgid "Nick"
-msgstr ""
+msgstr "Nick"
 
 #: themes/default/templates/account/_helpers.html:39
 msgid "E-mail"
-msgstr ""
+msgstr "E-post"
 
 #: themes/default/templates/account/_helpers.html:51
 #: themes/default/templates/account/_helpers.html:62
 #: themes/default/templates/account/public_profile.html:22
 #: themes/default/templates/stats/index.html:19
 msgid "Rank"
-msgstr ""
+msgstr "Räng"
 
 #: themes/default/templates/account/_helpers.html:56
 #: themes/default/templates/projects/tasks_browse.html:29
 msgid "of"
-msgstr ""
+msgstr "för"
 
 #: themes/default/templates/account/_helpers.html:56
 msgid "with a Score of"
-msgstr ""
+msgstr "med poäng på"
 
 #: themes/default/templates/account/_helpers.html:56
 msgid "contributed tasks"
-msgstr ""
+msgstr "uppgifter bidragit"
 
 #: themes/default/templates/account/_helpers.html:62
 msgid "The user has not contributed to any tasks yet"
-msgstr ""
+msgstr "Användaren har inte bidragit till några uppgifter än"
 
 #: themes/default/templates/account/_helpers.html:66
 msgid "Joined"
-msgstr ""
+msgstr "Gick med"
 
 #: themes/default/templates/account/_helpers.html:70
 msgid "API key"
-msgstr ""
+msgstr "API-nyckel"
 
 #: themes/default/templates/account/_helpers.html:74
 msgid "Edit your profile"
-msgstr ""
+msgstr "Redigera din profil"
 
 #: themes/default/templates/account/_helpers.html:106
 #: themes/default/templates/account/_helpers.html:108
 #: themes/default/templates/projects/_helpers.html:7
 #: themes/default/templates/projects/_helpers.html:9
 msgid "Prev"
-msgstr ""
+msgstr "Föregående"
 
 #: themes/default/templates/account/_helpers.html:127
 #: themes/default/templates/projects/_helpers.html:28
 msgid "Next"
-msgstr ""
+msgstr "Nästa"
 
 #: themes/default/templates/account/account_validation.html:8
 msgid "Just one more step, please"
-msgstr ""
+msgstr "Bara ett steg till"
 
 #: themes/default/templates/account/account_validation.html:9
 msgid ""
@@ -166,55 +167,62 @@ msgid ""
 " just provided. Please, check it out and click on the link you'll find to"
 " create your account at"
 msgstr ""
+"För att bekräfta din identitet har vi skickat ett e-postmeddelande till "
+"adressen du tillhandahållen alldeles nyss. Kolla gärna in den och klicka "
+"på länken som du hittar för att skapa ditt konto"
 
 #: themes/default/templates/account/account_validation.html:10
 msgid ""
 "If you are not receiving the email, please check the junk folder. If it's"
 " not there please drop us an email to"
 msgstr ""
+"Om du inte får e-postmeddelandet, kontrollera skräppostmappen. Om det "
+"inte finns kan du skicka ett e-postmeddelande till oss"
 
 #: themes/default/templates/account/account_validation.html:11
 msgid "In the meantime, you can check some of the amazing"
-msgstr ""
+msgstr "Under tiden kan du kolla in några av de fantastiska"
 
 #: themes/default/templates/account/account_validation.html:11
 msgid "projects"
-msgstr ""
+msgstr "projekt"
 
 #: themes/default/templates/account/account_validation.html:11
 msgid "and contribute to them as anonymous"
-msgstr ""
+msgstr "och bidra anonymt"
 
 #: themes/default/templates/account/index.html:15
 msgid "registered users"
-msgstr ""
+msgstr "registrerade användare"
 
 #: themes/default/templates/account/index.html:15
 #: themes/default/templates/stats/global.html:42
 msgid "Leaderboard"
-msgstr ""
+msgstr "Leaderboard"
 
 #: themes/default/templates/account/newsletter.html:8
 msgid "Newsletter"
-msgstr ""
+msgstr "Nyhetsbrev"
 
 #: themes/default/templates/account/newsletter.html:9
 msgid ""
 "If you want to be updated with our new features, projects, and\n"
 "                scientific projects, subscribe to our newsletter."
 msgstr ""
+"Om du vill uppdateras med våra nya funktioner, projekt och\n"
+" vetenskapliga projekt, prenumerera på vårt nyhetsbrev."
 
 #: themes/default/templates/account/newsletter.html:13
 msgid "Sign me up!"
-msgstr ""
+msgstr "Bli medlem!"
 
 #: themes/default/templates/account/newsletter.html:16
 msgid "Not interested"
-msgstr ""
+msgstr "Inte intresserad"
 
 #: themes/default/templates/account/otpvalidation.html:15
 msgid "Verify OTP"
-msgstr ""
+msgstr "Verifiera OTP"
 
 #: themes/default/templates/account/otpvalidation.html:16
 #: themes/default/templates/account/password_forgot.html:14
@@ -226,182 +234,184 @@ msgstr ""
 #: themes/default/templates/projects/password.html:20
 #: themes/default/templates/projects/task_n_answers.html:14
 msgid "Cancel"
-msgstr ""
+msgstr "Avbryt"
 
 #: themes/default/templates/account/password_forgot.html:7
 #: themes/default/templates/account/password_reset.html:7
 msgid "Reset your Password"
-msgstr ""
+msgstr "Återställ ditt lösenord"
 
 #: themes/default/templates/account/password_forgot.html:11
 msgid "my e-mail"
-msgstr ""
+msgstr "min e-post"
 
 #: themes/default/templates/account/password_forgot.html:13
 msgid "Reset my Password"
-msgstr ""
+msgstr "Återställ mitt lösenord"
 
 #: themes/default/templates/account/password_reset.html:11
 msgid "my new password"
-msgstr ""
+msgstr "mitt nya lösenord"
 
 #: themes/default/templates/account/password_reset.html:12
 msgid "my new password again"
-msgstr ""
+msgstr "mitt nya lösenord igen"
 
 #: themes/default/templates/account/profile.html:16
 msgid "Your Account"
-msgstr ""
+msgstr "Ditt Konto"
 
 #: themes/default/templates/account/profile.html:24
 msgid "Your Contributions"
-msgstr ""
+msgstr "Dina Bidrag"
 
 #: themes/default/templates/account/projects.html:16
 #: themes/default/templates/stats/global.html:84
 msgid "Published Projects"
-msgstr ""
+msgstr "Publicerad Projekt"
 
 #: themes/default/templates/account/projects.html:19
 #: themes/default/templates/projects/index.html:27
 #: themes/default/templates/stats/global.html:86
 msgid "Draft Projects"
-msgstr ""
+msgstr "Förslag Projekt"
 
 #: themes/default/templates/account/projects.html:22
 msgid "You have not created a project"
-msgstr ""
+msgstr "Du har inte skapat ett projekt"
 
 #: themes/default/templates/account/projects.html:23
 msgid "Let's do it!"
-msgstr ""
+msgstr "Vi gör de"
 
 #: themes/default/templates/account/register.html:9
 msgid "Create an account"
-msgstr ""
+msgstr "Skapa ett konto"
 
 #: themes/default/templates/account/register.html:13
 msgid ""
 "To create an account you must be 16+ years old. Please enter your date of"
 " birth"
 msgstr ""
+"För att skapa ett konto måste du vara 16+ år gammal. Ange ditt "
+"födelsedatum"
 
 #: themes/default/templates/account/register.html:18
 msgid "Check age"
-msgstr ""
+msgstr "Kontrollera ålder"
 
 #: themes/default/templates/account/register.html:24
 #: themes/default/templates/account/signin.html:41
 msgid "Note"
-msgstr ""
+msgstr "OBS"
 
 #: themes/default/templates/account/register.html:25
 #: themes/default/templates/account/signin.html:42
 msgid "By clicking the"
-msgstr ""
+msgstr "Genom att klicka på"
 
 #: themes/default/templates/account/register.html:26
 msgid "Create account button"
-msgstr ""
+msgstr "Skapa konto-knapp"
 
 #: themes/default/templates/account/register.html:27
 msgid "below you are agreeing to the"
-msgstr ""
+msgstr "nedan godkänner du"
 
 #: themes/default/templates/account/register.html:28
 #: themes/default/templates/account/signin.html:43
 msgid "terms of use"
-msgstr ""
+msgstr "villkor"
 
 #: themes/default/templates/account/register.html:28
 #: themes/default/templates/account/signin.html:43
 msgid "and"
-msgstr ""
+msgstr "och"
 
 #: themes/default/templates/account/register.html:29
 #: themes/default/templates/account/signin.html:44
 msgid "data"
-msgstr ""
+msgstr "data"
 
 #: themes/default/templates/account/signin.html:12
 msgid "Forgot Password"
-msgstr ""
+msgstr "Glömt lösenord"
 
 #: themes/default/templates/account/signin.html:14
 msgid "Not registered?"
-msgstr ""
+msgstr "Inte registrerad?"
 
 #: themes/default/templates/account/signin.html:14
 msgid "Sign up for free now"
-msgstr ""
+msgstr "Registrera dig gratis nu"
 
 #: themes/default/templates/account/signin.html:19
 #: themes/default/templates/account/signin.html:29
 #: themes/default/templates/projects/tasks/twitter.html:2
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: themes/default/templates/account/signin.html:22
 #: themes/default/templates/account/signin.html:32
 msgid "Facebook"
-msgstr ""
+msgstr "Facebook"
 
 #: themes/default/templates/account/signin.html:25
 #: themes/default/templates/account/signin.html:35
 msgid "Google"
-msgstr ""
+msgstr "Google"
 
 #: themes/default/templates/account/signin.html:42
 msgid "Sign in button"
-msgstr ""
+msgstr "Logga in knapp"
 
 #: themes/default/templates/account/signin.html:42
 msgid ""
 "below you are agreeing to\n"
 "                the"
-msgstr ""
+msgstr "nedan godkänner du den"
 
 #: themes/default/templates/account/update.html:16
 msgid "Update your profile"
-msgstr ""
+msgstr "Uppdatera din profil"
 
 #: themes/default/templates/account/update.html:18
 #: themes/default/templates/account/update.html:46
 #: themes/default/templates/account/update.html:56
 #: themes/default/templates/projects/update.html:42
 msgid "Save the changes"
-msgstr ""
+msgstr "Spara ändringarna"
 
 #: themes/default/templates/account/update.html:22
 msgid "Update your avatar"
-msgstr ""
+msgstr "Uppdatera din avatar"
 
 #: themes/default/templates/account/update.html:37
 #: themes/default/templates/projects/update.html:21
 msgid "Upload"
-msgstr ""
+msgstr "Ladda upp"
 
 #: themes/default/templates/account/update.html:44
 msgid "Change your Password"
-msgstr ""
+msgstr "Ändra ditt lösenord"
 
 #: themes/default/templates/account/update.html:51
 msgid "External Services"
-msgstr ""
+msgstr "Externa tjänster"
 
 #: themes/default/templates/account/update.html:62
 msgid "Do you want to reset your personal API Key?"
-msgstr ""
+msgstr "Vill du återställa din personliga API-nyckel?"
 
 #: themes/default/templates/account/update.html:66
 #: themes/default/templates/projects/tasks/delete.html:19
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #: themes/default/templates/account/update.html:71
 #: themes/default/templates/account/update.html:76
 msgid "Export your data"
-msgstr ""
+msgstr "Exportera dina data"
 
 #: themes/default/templates/account/update.html:73
 msgid ""
@@ -409,10 +419,13 @@ msgid ""
 " access to your personal data, your contributions and the projects you "
 "have created"
 msgstr ""
+"Du får ett e-postmeddelande när data är tillgängliga för nedladdning. Du "
+"fårtillgång till dina personuppgifter, dina bidrag och de projekt duhar "
+"skapat"
 
 #: themes/default/templates/account/update.html:80
 msgid "Delete your account"
-msgstr ""
+msgstr "Radera ditt konto"
 
 #: themes/default/templates/account/update.html:82
 #: themes/default/templates/admin/del_category.html:7
@@ -420,7 +433,7 @@ msgstr ""
 #: themes/default/templates/projects/tasks/delete.html:9
 #: themes/default/templates/projects/transferownership.html:12
 msgid "Danger Zone!"
-msgstr ""
+msgstr "Farozon!"
 
 #: themes/default/templates/account/update.html:82
 msgid ""
@@ -428,10 +441,13 @@ msgid ""
 " server and third party services. Your contributions will be anonymized. "
 "This operation cannot be undone!"
 msgstr ""
+"Genom att radera ditt konto kommer alla dina personuppgifter att tas bort"
+" från server och tredje parts tjänster. Dina bidrag kommer att "
+"anonymiseras. Denna åtgärd kan inte ångras!"
 
 #: themes/default/templates/account/update.html:85
 msgid "Type your email to confirm that you want to delete it."
-msgstr ""
+msgstr "Skriv din e-postadress för att bekräfta att du vill radera den."
 
 #: themes/default/templates/account/update.html:86
 #: themes/default/templates/admin/announcement.html:34
@@ -440,250 +456,256 @@ msgstr ""
 #: themes/default/templates/projects/task_autoimporter.html:40
 #: themes/default/templates/projects/task_settings.html:20
 msgid "Delete"
-msgstr ""
+msgstr "Radera"
 
 #: themes/default/templates/account/email/forgot_password.html:4
 msgid "Recover your lost password"
-msgstr ""
+msgstr "Återställ ditt förlorade lösenord"
 
 #: themes/default/templates/account/email/forgot_password.html:8
 #: themes/default/templates/account/email/forgot_password_openid.html:8
 #: themes/default/templates/account/email/validate_account.html:8
 msgid "Hello"
-msgstr ""
+msgstr "Hej"
 
 #: themes/default/templates/account/email/forgot_password.html:14
 #: themes/default/templates/account/email/forgot_password_openid.html:13
 msgid "We received a request to recover your password for"
-msgstr ""
+msgstr "Vi fick en begäran om att återställa ditt lösenord för"
 
 #: themes/default/templates/account/email/forgot_password.html:17
 #: themes/default/templates/account/email/forgot_password_openid.html:16
 #: themes/default/templates/account/email/validate_account.html:22
 msgid "If you did not request this, please ignore this email"
-msgstr ""
+msgstr "Om du inte begärde detta, ignorera det här e-postmeddelandet"
 
 #: themes/default/templates/account/email/forgot_password.html:20
 msgid "To recover your password, please visit the URL below"
-msgstr ""
+msgstr "För att återställa ditt lösenord, besök webbadressen nedan"
 
 #: themes/default/templates/account/email/forgot_password.html:23
 msgid "Click here to recover your account"
-msgstr ""
+msgstr "Klicka här för att återställa ditt konto"
 
 #: themes/default/templates/account/email/forgot_password.html:26
 #: themes/default/templates/account/email/forgot_password_openid.html:22
 #: themes/default/templates/account/email/validate_account.html:31
 msgid "Regards"
-msgstr ""
+msgstr "Hälsningar"
 
 #: themes/default/templates/account/email/forgot_password_openid.html:4
 msgid "Recover your password"
-msgstr ""
+msgstr "Återställ ditt lösenord"
 
 #: themes/default/templates/account/email/forgot_password_openid.html:19
 msgid "Our records show that you use your"
-msgstr ""
+msgstr "Våra register visar att du använder din"
 
 #: themes/default/templates/account/email/forgot_password_openid.html:19
 msgid ""
 "account to sign in. Please use the same account to sign-in again. If you "
 "forgot the password to your"
 msgstr ""
+"konto för att logga in. Använd samma konto för att logga in igen. Om du "
+"glömde lösenordet till din"
 
 #: themes/default/templates/account/email/forgot_password_openid.html:19
 msgid "account, please contact"
-msgstr ""
+msgstr "konto, vänligen kontakta"
 
 #: themes/default/templates/account/email/forgot_password_openid.html:25
 #: themes/default/templates/account/email/validate_account.html:34
 msgid "Team"
-msgstr ""
+msgstr "Lag"
 
 #: themes/default/templates/account/email/validate_account.html:4
 msgid "Validate your account"
-msgstr ""
+msgstr "Verifiera ditt konto"
 
 #: themes/default/templates/account/email/validate_account.html:13
 msgid "Thank you for creating an account in"
-msgstr ""
+msgstr "Tack för att du skapade ett konto i"
 
 #: themes/default/templates/account/email/validate_account.html:16
 msgid "Just one more step!"
-msgstr ""
+msgstr "Bara ett steg till!"
 
 #: themes/default/templates/account/email/validate_account.html:19
 msgid ""
 "To verify that you are the owner of this e-mail address, please visit the"
 " URL below"
 msgstr ""
+"För att verifiera att du är ägare till den här e-postadressen, besök "
+"gärna URL:n nedan"
 
 #: themes/default/templates/account/email/validate_account.html:25
 msgid "Click here to confirm your e-mail address and create your account"
-msgstr ""
+msgstr "Klicka här för att bekräfta din e-postadress och skapa ditt konto"
 
 #: themes/default/templates/admin/_helpers.html:10
 msgid "nick"
-msgstr ""
+msgstr "kortnamn"
 
 #: themes/default/templates/admin/_helpers.html:11
 msgid "Member since"
-msgstr ""
+msgstr "Medlem sedan"
 
 #: themes/default/templates/admin/_helpers.html:15
 #: themes/default/templates/admin/_helpers.html:50
 msgid "Remove from admin group"
-msgstr ""
+msgstr "Ta bort från administratörsgruppen"
 
 #: themes/default/templates/admin/_helpers.html:19
 #: themes/default/templates/admin/_helpers.html:55
 msgid "Add to admin group"
-msgstr ""
+msgstr "Lägg till i administratörsgruppen"
 
 #: themes/default/templates/admin/announcement.html:7
 msgid "Announcements"
-msgstr ""
+msgstr "Tillkännagivande"
 
 #: themes/default/templates/admin/announcement.html:9
 msgid "Create a new Announcement"
-msgstr ""
+msgstr "Skapa ett nytt tillkännagivande"
 
 #: themes/default/templates/admin/announcement.html:25
 #: themes/default/templates/projects/_helpers.html:342
 msgid "DRAFT"
-msgstr ""
+msgstr "FÖRSLAG"
 
 #: themes/default/templates/admin/announcement.html:46
 #: themes/default/templates/projects/blog.html:20
 msgid "Sorry! No posts so far."
-msgstr ""
+msgstr "Förlåt! Inga inlägg hittills."
 
 #: themes/default/templates/admin/categories.html:9
 msgid "Manage Categories"
-msgstr ""
+msgstr "Hantera kategorier"
 
 #: themes/default/templates/admin/categories.html:15
 #: themes/default/templates/admin/update_category.html:10
 msgid "Category name"
-msgstr ""
+msgstr "Kategori namn"
 
 #: themes/default/templates/admin/categories.html:16
 #: themes/default/templates/admin/update_category.html:11
 msgid "Category description"
-msgstr ""
+msgstr "Kategoribeskrivning"
 
 #: themes/default/templates/admin/categories.html:18
 msgid "Add Category"
-msgstr ""
+msgstr "Lägg till Kategori"
 
 #: themes/default/templates/admin/categories.html:25
 msgid "List of Available Categories"
-msgstr ""
+msgstr "Lista över Tillgängliga Kategorier"
 
 #: themes/default/templates/admin/categories.html:34
 msgid "Edit Category Name"
-msgstr ""
+msgstr "Redigera kategorinamn"
 
 #: themes/default/templates/admin/categories.html:36
 #: themes/default/templates/admin/categories.html:38
 #: themes/default/templates/admin/del_category.html:9
 msgid "Delete Category"
-msgstr ""
+msgstr "Ta Bort Kategori"
 
 #: themes/default/templates/admin/dashboard.html:19
 msgid "Dashboard last 7 days"
-msgstr ""
+msgstr "Dashboard senaste 7 dagarna"
 
 #: themes/default/templates/admin/dashboard.html:22
 msgid "Refresh"
-msgstr ""
+msgstr "Uppdatera"
 
 #: themes/default/templates/admin/dashboard.html:28
 msgid "Active users"
-msgstr ""
+msgstr "Aktiva användare"
 
 #: themes/default/templates/admin/dashboard.html:37
 msgid "Active anonymous users"
-msgstr ""
+msgstr "Aktiva anonyma användare"
 
 #: themes/default/templates/admin/dashboard.html:46
 msgid "Draft projects"
-msgstr ""
+msgstr "Utkast till projekt"
 
 #: themes/default/templates/admin/dashboard.html:54
 msgid "Published projects"
-msgstr ""
+msgstr "Publicerade projekt"
 
 #: themes/default/templates/admin/dashboard.html:62
 msgid "Updated projects"
-msgstr ""
+msgstr "Uppdaterade projekt"
 
 #: themes/default/templates/admin/dashboard.html:70
 msgid "New tasks"
-msgstr ""
+msgstr "Nya uppgifter"
 
 #: themes/default/templates/admin/dashboard.html:79
 msgid "New Answers"
-msgstr ""
+msgstr "Nya svar"
 
 #: themes/default/templates/admin/dashboard.html:88
 msgid "New Users"
-msgstr ""
+msgstr "Nya användare"
 
 #: themes/default/templates/admin/dashboard.html:97
 msgid "Returning Users"
-msgstr ""
+msgstr "Återkommande användare"
 
 #: themes/default/templates/admin/dashboard.html:109
 msgid "Recent activity"
-msgstr ""
+msgstr "Senaste aktivitet"
 
 #: themes/default/templates/admin/dashboard.html:116
 msgid "new project created"
-msgstr ""
+msgstr "nytt projekt skapat"
 
 #: themes/default/templates/admin/dashboard.html:120
 msgid "has published a blog post"
-msgstr ""
+msgstr "har publicerat ett blogginlägg"
 
 #: themes/default/templates/admin/dashboard.html:124
 msgid "has added new tasks"
-msgstr ""
+msgstr "har lagt till nya uppgifter"
 
 #: themes/default/templates/admin/dashboard.html:128
 msgid "has completed a task"
-msgstr ""
+msgstr "har slutfört en uppgift"
 
 #: themes/default/templates/admin/dashboard.html:132
 msgid "has contributed to"
-msgstr ""
+msgstr "har bidragit till"
 
 #: themes/default/templates/admin/dashboard.html:140
 #: themes/default/templates/admin/dashboard.html:150
 msgid "has joined"
-msgstr ""
+msgstr "har gått med"
 
 #: themes/default/templates/admin/dashboard.html:161
 msgid "No data available yet. You'll need to wait 24 hours."
-msgstr ""
+msgstr "Ingen data tillgänglig än. Du måste vänta 24 timmar."
 
 #: themes/default/templates/admin/del_category.html:7
 msgid ""
 "Deleting the category will remove it from all the projects! This "
 "operation cannot be undone!"
 msgstr ""
+"Om du tar bort kategorin tas den bort från alla projekt! Detta operation "
+"kan inte ångras!"
 
 #: themes/default/templates/admin/del_category.html:13
 msgid "No, do not delete it"
-msgstr ""
+msgstr "Nej, ta inte bort den"
 
 #: themes/default/templates/admin/index.html:8
 msgid "Dashboard"
-msgstr ""
+msgstr "Dashboard"
 
 #: themes/default/templates/admin/index.html:8
 msgid "Internal statistics"
-msgstr ""
+msgstr "Intern statistik"
 
 #: themes/default/templates/admin/index.html:8
 #: themes/default/templates/projects/presenters/basic.html:2
@@ -694,130 +716,130 @@ msgstr ""
 #: themes/default/templates/projects/presenters/sound.html:2
 #: themes/default/templates/projects/presenters/video.html:2
 msgid "Go"
-msgstr ""
+msgstr "Gå"
 
 #: themes/default/templates/admin/index.html:11
 msgid "Background Jobs"
-msgstr ""
+msgstr "Bakgrundsjobb"
 
 #: themes/default/templates/admin/index.html:11
 msgid "Monitor background jobs"
-msgstr ""
+msgstr "Övervaka bakgrundsjobben"
 
 #: themes/default/templates/admin/index.html:11
 msgid "Monitor"
-msgstr ""
+msgstr "Övervaka"
 
 #: themes/default/templates/admin/index.html:16
 #: themes/default/templates/home/index.html:12
 #: themes/default/templates/projects/index.html:24
 msgid "Featured Projects"
-msgstr ""
+msgstr "Utvalda projekt"
 
 #: themes/default/templates/admin/index.html:16
 msgid "Show projects on the front page"
-msgstr ""
+msgstr "Visa projekt på förstasidan"
 
 #: themes/default/templates/admin/index.html:16
 #: themes/default/templates/admin/index.html:19
 #: themes/default/templates/admin/index.html:24
 #: themes/default/templates/admin/index.html:32
 msgid "Manage"
-msgstr ""
+msgstr "Hantera"
 
 #: themes/default/templates/admin/index.html:19
 msgid "Categories"
-msgstr ""
+msgstr "Kategorier"
 
 #: themes/default/templates/admin/index.html:19
 msgid "Manage project categories"
-msgstr ""
+msgstr "Hantera projektkategorier"
 
 #: themes/default/templates/admin/index.html:24
 msgid "Administrators"
-msgstr ""
+msgstr "Administratörer"
 
 #: themes/default/templates/admin/index.html:24
 msgid "Manage administrators"
-msgstr ""
+msgstr "Hantera administratörer"
 
 #: themes/default/templates/admin/index.html:27
 #: themes/default/templates/projects/coowners.html:26
 #: themes/default/templates/projects/stats.html:228
 msgid "Users"
-msgstr ""
+msgstr "Användare"
 
 #: themes/default/templates/admin/index.html:27
 msgid "Export a list of users"
-msgstr ""
+msgstr "Exportera en lista med användare"
 
 #: themes/default/templates/admin/index.html:27
 #: themes/default/templates/projects/settings.html:31
 #: themes/default/templates/projects/tasks/csv.html:2
 msgid "CSV"
-msgstr ""
+msgstr "CSV"
 
 #: themes/default/templates/admin/index.html:27
 msgid "JSON"
-msgstr ""
+msgstr "JSON"
 
 #: themes/default/templates/admin/index.html:32
 msgid "Announcement"
-msgstr ""
+msgstr "Tillkännagivande"
 
 #: themes/default/templates/admin/index.html:32
 msgid "Write new announcement"
-msgstr ""
+msgstr "Skriv ett nytt tillkännagivande"
 
 #: themes/default/templates/admin/index.html:37
 msgid "Latest news from PyBossa"
-msgstr ""
+msgstr "Senaste nyheterna från PyBossa"
 
 #: themes/default/templates/admin/index.html:40
 msgid "New PyBossa version"
-msgstr ""
+msgstr "Ny PyBossa-version"
 
 #: themes/default/templates/admin/index.html:40
 msgid "New SciFabric Blog Post"
-msgstr ""
+msgstr "Nytt SciFabric-blogginlägg"
 
 #: themes/default/templates/admin/new_announcement.html:8
 msgid "New announcement"
-msgstr ""
+msgstr "Nytt tillkännagivande"
 
 #: themes/default/templates/admin/projects.html:5
 msgid "Manage featured projects"
-msgstr ""
+msgstr "Hantera utvalda projekt"
 
 #: themes/default/templates/admin/update_category.html:13
 msgid "Update Category"
-msgstr ""
+msgstr "Uppdatera Kategori"
 
 #: themes/default/templates/admin/users.html:6
 msgid "Manage Admin Users"
-msgstr ""
+msgstr "Hantera Admin-användare"
 
 #: themes/default/templates/admin/users.html:14
 msgid "Try with the full name or nick"
-msgstr ""
+msgstr "Försök med hela eller kortnamnet"
 
 #: themes/default/templates/admin/users.html:16
 #: themes/default/templates/projects/coowners.html:19
 msgid "Search"
-msgstr ""
+msgstr "Sök"
 
 #: themes/default/templates/admin/users.html:24
 msgid "Found Users"
-msgstr ""
+msgstr "Hittade Användare"
 
 #: themes/default/templates/admin/users.html:35
 msgid "Current Users with Admin privileges"
-msgstr ""
+msgstr "Nuvarande användare med Admin behörighet"
 
 #: themes/default/templates/custom/_about.html:5
 #: themes/default/templates/custom/_index.html:4
 msgid "BioAtlas Citizen Science"
-msgstr ""
+msgstr "BioAtlas Medborgarforskning"
 
 #: themes/default/templates/custom/_about.html:7
 msgid ""
@@ -829,6 +851,13 @@ msgid ""
 "projects, with the aim of improving museum collections with geographical "
 "data and link coordinates to each specimen."
 msgstr ""
+"Arbetet med våra naturhistoriska samlingar har traditionellt utförts "
+"genom samarbete av museiintendenter, taxonomiska experter och "
+"entusiastiska volontärer. Inom projekten för BioAtlas medborgarforskning "
+"utökar och utvecklar vi samarbetet vidare, och möjliggör insamling av "
+"större mängder data. Inom BioAtlas samlas olika digitaliseringsprojekt, "
+"med målsättningen att inkludera geografiska data till museets samlingar "
+"och koppla koordinater till varje kollekt."
 
 #: themes/default/templates/custom/_about.html:9
 msgid ""
@@ -841,6 +870,13 @@ msgid ""
 " included in our botanical database and used in further research and "
 "conservation biology monitoring programs."
 msgstr ""
+"Koordinat-angivelserna ger viktig information om våra museiföremål och är"
+" nödvändiga för möjligheten att analysera fynddata och vidare för "
+"förståelsen av enstaka arters utbredningsmönster och svampars biologiska "
+"mångfald. Här du kan hjälpa till att öka kunskapen genom att "
+"koordinatsätta våra kollekter, och varje bidrag är en viktig pusselbit! "
+"Koordinaterna kommer inkluderas i vår botaniska databas, och vidare "
+"använda inom forskning och olika bevarandebiologiska övervakningsprogram."
 
 #: themes/default/templates/custom/_about.html:15
 msgid ""
@@ -850,10 +886,14 @@ msgid ""
 "inn, since the building was demolished 50 years ago and the Rosendal "
 "district has now grown up."
 msgstr ""
+"Så här kan en kollekt se ut i våra samlingar. En svampparasit på blad som"
+" samlades in av A.G. Eliasson vid Grindstugan i Uppsala 1895. Idag är det"
+" inte lika enkelt att hitta platsen för grindstugans värdshus, då "
+"byggnaden revs för 50 år sedan och stadsdelen Rosendal nu vuxit upp."
 
 #: themes/default/templates/custom/_about.html:20
 msgid "Who we are :"
-msgstr ""
+msgstr "Vi som jobbar med detta projekt är :"
 
 #: themes/default/templates/custom/_about.html:27
 msgid ""
@@ -861,6 +901,9 @@ msgid ""
 "databases. In addition, I take care of our lending activities and send "
 "museum objects to researchers all over the world."
 msgstr ""
+"Jag är museitekniker och ansvarar för Evolutionsmuseets databaser. "
+"Dessutom har jag hand om vår låneverksamhet och skickar museiföremål till"
+" forskare över hela världen."
 
 #: themes/default/templates/custom/_about.html:36
 msgid ""
@@ -868,10 +911,13 @@ msgid ""
 "of fungi. The fungal collections consist of about 360,000 specimens, of "
 "which almost half are digitized and available from our database."
 msgstr ""
+"Jag är intendent och ansvarig för Evolutionsmuseets svampsamlingar. "
+"Svampsamlingarna består av ca 360 000 kollekter, varav snart hälften är "
+"digitaliserade och synliga i vår databas."
 
 #: themes/default/templates/custom/_index.html:12
 msgid "Help to georeference fungi from Uppland"
-msgstr ""
+msgstr "Hjälp till att koordinatsätta svampar från Uppland"
 
 #: themes/default/templates/custom/_index.html:14
 msgid ""
@@ -880,6 +926,9 @@ msgid ""
 " acquainted with our museum material and contribute important "
 "information."
 msgstr ""
+"Är du fascinerad av svampar, eller tycker du om att studera kartor? "
+"Kanske är du intresserad av gamla ortnamn i Uppland? Nu har du chansen "
+"att bekanta dig med vårt museimaterial och bidra med viktig information."
 
 #: themes/default/templates/custom/_index.html:15
 msgid ""
@@ -890,16 +939,24 @@ msgid ""
 "area and start helping us with the coordinate determination. Join us on a"
 " journey through time and space and find out where the fungi once grew! "
 msgstr ""
+"Evolutionsmuseet i Uppsala har ett stort antal insamlade svampar som "
+"saknar koordinater för platsen där de är samlade. Vissa är insamlade av "
+"kända mykologer från 1800-talet då Uppsala var en annan stad, och andra "
+"nyligen. Välj en svampgrupp eller ett geografiskt område och sätt igång "
+"att hjälpa oss med koordinat-bestämningen. Följ med på en resa i tid och "
+"rum och ta reda på var svampen en gång växte!"
 
 #: themes/default/templates/custom/_index.html:16
 msgid ""
 "To get started: go to the heading Projects - select project - and go to "
 "More info - Contribute now."
 msgstr ""
+"För att komma igång: gå till rubriken Projekt - välj projekt- och gå till"
+" Mer info - Börja bidra nu."
 
 #: themes/default/templates/custom/_index.html:17
 msgid "Thank you for your participation!"
-msgstr ""
+msgstr "Tack för din medverkan!"
 
 #: themes/default/templates/home/_about.html:6
 msgid ""
@@ -907,6 +964,8 @@ msgid ""
 "\n"
 "that can't be processed by machines alone."
 msgstr ""
+"PYBOSSA är det ultimata Crowdsourcing-ramverket för att analysera eller "
+"berika data\\ nsom inte kan bearbetas av maskiner ensamma."
 
 #: themes/default/templates/home/_about.html:9
 msgid ""
@@ -922,12 +981,12 @@ msgstr ""
 
 #: themes/default/templates/home/_about.html:12
 msgid "PYBOSSA is different to existing efforts:"
-msgstr ""
+msgstr "PyBossa skiljer sig från befintliga insatser:"
 
 #: themes/default/templates/home/_about.html:14
 #, python-format
 msgid "It's a 100%% open-source"
-msgstr ""
+msgstr "Detta är 100%% öppen källkod"
 
 #: themes/default/templates/home/_about.html:15
 msgid ""
@@ -935,6 +994,9 @@ msgid ""
 " handle payment or money — it is designed to support volunteer-driven "
 "projects."
 msgstr ""
+"Till skillnad från exempelvis “mechanical turk” -projekt är PyBossa inte "
+"utformad för att hantera betalning eller pengar - de är utformade för att"
+" stödja volontärstyrd projekt."
 
 #: themes/default/templates/home/_about.html:17
 msgid ""
@@ -944,43 +1006,53 @@ msgid ""
 "snippets of Javascript and HTML which are then deployed on a PYBOSSA "
 "instance (such as"
 msgstr ""
+"Den är utformad som en plattform och ram för att utveckla utplacering av "
+"crowd-sourcing och microtasking-projekt snarare än att vara själva ett "
+"crowd-sourcing projekt. Enskilda crowd-sourcing projekt skrivs som enkelt"
+" utdrag av Javascript och HTML och sedan distribueras på en PyBossa "
+"instans (liksom"
 
 #: themes/default/templates/home/_about.html:17
 msgid ""
 "This way one can easily develop custom projects while using the PYBOSSA "
 "platform to store your data, manage users, and handle workflow"
 msgstr ""
+"På så sätt kan man enkelt utveckla anpassade projekt när man använder "
+"PyBossa plattform för att lagra dina data, hantera användare och hantera "
+"arbetsflöde"
 
 #: themes/default/templates/home/_about.html:22
 msgid "You can read more about the architecture in the"
-msgstr ""
+msgstr "Du kan läsa mer om arkitekturen i"
 
 #: themes/default/templates/home/_about.html:22
 msgid "PYBOSSA Documentation"
-msgstr ""
+msgstr "PyBossa-dokumentation"
 
 #: themes/default/templates/home/_about.html:22
 msgid "and follow the"
-msgstr ""
+msgstr "och följ"
 
 #: themes/default/templates/home/_about.html:22
 msgid "step-by-step tutorial to create your own projects"
-msgstr ""
+msgstr "steg-för-steg handledning för att skapa egna projekt"
 
 #: themes/default/templates/home/_index.html:8
 #: themes/default/templates/projects/_helpers.html:58
 msgid "Contribute"
-msgstr ""
+msgstr "Bidra"
 
 #: themes/default/templates/home/_index.html:10
 msgid "Welcome to "
-msgstr ""
+msgstr "Välkommen till"
 
 #: themes/default/templates/home/_index.html:11
 msgid ""
 "The ultimate crowdsourcing framework to analyze or enrich data that can't"
 " be processed by machines alone."
 msgstr ""
+"Det ultimata ramverket för Crowdsourcing för att analysera eller berika "
+"data som inte kanbearbetas endast av maskiner."
 
 #: themes/default/templates/home/_pybossa_text.html:1
 msgid ""
@@ -988,37 +1060,40 @@ msgid ""
 "knowledge or intelligence such as image classification, transcription, "
 "geocoding and more!"
 msgstr ""
+"Onlinehjälp för att utföra uppgifter som kräver mänsklig kognition, "
+"kunskap eller intelligens som bildklassificering, transkription, "
+"geokodning och mer!"
 
 #: themes/default/templates/home/_pybossa_text.html:3
 msgid "Help advance research"
-msgstr ""
+msgstr "Hjälp att främja forskning"
 
 #: themes/default/templates/home/_pybossa_text.html:4
 msgid "Everything is open and freely usable"
-msgstr ""
+msgstr "Allt är öppet och fritt användbart"
 
 #: themes/default/templates/home/_pybossa_text.html:5
 msgid "Things computers can't do"
-msgstr ""
+msgstr "Saker som datorer inte kan göra"
 
 #: themes/default/templates/home/index.html:8
 msgid "Historical Contributions"
-msgstr ""
+msgstr "Historiskt bidrag"
 
 #: themes/default/templates/home/search.html:8
 msgid "Search Results"
-msgstr ""
+msgstr "Sökresultat"
 
 #: themes/default/templates/projects/_helpers.html:41
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 #: themes/default/templates/projects/_helpers.html:42
 #: themes/default/templates/projects/export.html:22
 #: themes/default/templates/projects/export.html:36
 #: themes/default/templates/projects/results.html:4
 msgid "Results"
-msgstr ""
+msgstr "Resultat"
 
 #: themes/default/templates/projects/_helpers.html:43
 #: themes/default/templates/projects/_helpers.html:73
@@ -1027,11 +1102,11 @@ msgstr ""
 #: themes/default/templates/projects/stats.html:280
 #: themes/default/templates/projects/stats.html:370
 msgid "Tasks"
-msgstr ""
+msgstr "Uppgifter"
 
 #: themes/default/templates/projects/_helpers.html:44
 msgid "Statistics"
-msgstr ""
+msgstr "Statistik"
 
 #: themes/default/templates/projects/_helpers.html:46
 #: themes/default/templates/projects/_helpers.html:87
@@ -1039,131 +1114,131 @@ msgstr ""
 #: themes/default/templates/projects/settings.html:12
 #: themes/default/templates/projects/tasks.html:19
 msgid "Settings"
-msgstr ""
+msgstr "Inställningar"
 
 #: themes/default/templates/projects/_helpers.html:51
 #: themes/default/templates/projects/auditlog.html:4
 msgid "Audit Logs"
-msgstr ""
+msgstr "Audit Logs"
 
 #: themes/default/templates/projects/_helpers.html:54
 #: themes/default/templates/projects/webhook.html:4
 msgid "Webhooks"
-msgstr ""
+msgstr "Webhooks"
 
 #: themes/default/templates/projects/_helpers.html:57
 #: themes/default/templates/projects/settings.html:21
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
 #: themes/default/templates/projects/_helpers.html:67
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: themes/default/templates/projects/_helpers.html:69
 #: themes/default/templates/projects/_helpers.html:130
 msgid "Description"
-msgstr ""
+msgstr "Beskrivning"
 
 #: themes/default/templates/projects/_helpers.html:70
 #: themes/default/templates/projects/_helpers.html:131
 msgid "Creation Date"
-msgstr ""
+msgstr "Datum Skapad"
 
 #: themes/default/templates/projects/_helpers.html:71
 #: themes/default/templates/projects/_helpers.html:133
 msgid "Last Activity"
-msgstr ""
+msgstr "Sista Aktiviten"
 
 #: themes/default/templates/projects/_helpers.html:72
 #: themes/default/templates/projects/_helpers.html:136
 msgid "Overall progress"
-msgstr ""
+msgstr "Generell framgång"
 
 #: themes/default/templates/projects/_helpers.html:72
 #: themes/default/templates/projects/_helpers.html:198
 #: themes/default/templates/projects/base.html:27
 #: themes/default/templates/projects/tasks_browse.html:14
 msgid "completed"
-msgstr ""
+msgstr "avslutad"
 
 #: themes/default/templates/projects/_helpers.html:103
 #: themes/default/templates/projects/_helpers.html:113
 msgid "Remove from Featured!"
-msgstr ""
+msgstr "Ta bort från Featured!"
 
 #: themes/default/templates/projects/_helpers.html:106
 #: themes/default/templates/projects/_helpers.html:110
 msgid "Add to Featured!"
-msgstr ""
+msgstr "Lägg till i Featured!"
 
 #: themes/default/templates/projects/_helpers.html:138
 #: themes/default/templates/projects/_helpers.html:140
 msgid "Created by"
-msgstr ""
+msgstr "Skapad av"
 
 #: themes/default/templates/projects/_helpers.html:138
 msgid "Me"
-msgstr ""
+msgstr "Jag"
 
 #: themes/default/templates/projects/_helpers.html:143
 msgid "Try it!"
-msgstr ""
+msgstr "Prova det!"
 
 #: themes/default/templates/projects/_helpers.html:203
 msgid "Done! View results"
-msgstr ""
+msgstr "Gjort! Se resultat"
 
 #: themes/default/templates/projects/_helpers.html:206
 msgid "Start Contributing Now!"
-msgstr ""
+msgstr "Börja bidra nu!"
 
 #: themes/default/templates/projects/_helpers.html:209
 msgid "Thanks for contributing"
-msgstr ""
+msgstr "Tack för ditt bidrag"
 
 #: themes/default/templates/projects/_helpers.html:212
 msgid "Draft project, complete it!"
-msgstr ""
+msgstr "Utkast till projekt, slutför det!"
 
 #: themes/default/templates/projects/_helpers.html:216
 msgid "Test it!"
-msgstr ""
+msgstr "Testa det"
 
 #: themes/default/templates/projects/_helpers.html:217
 msgid "Publish it"
-msgstr ""
+msgstr "Publicera det"
 
 #: themes/default/templates/projects/_helpers.html:249
 #: themes/default/templates/projects/_helpers.html:255
 msgid "Remove from Featured"
-msgstr ""
+msgstr "Ta bort från Featured"
 
 #: themes/default/templates/projects/_helpers.html:250
 #: themes/default/templates/projects/_helpers.html:254
 msgid "Add to Featured"
-msgstr ""
+msgstr "Lägg till i Featured"
 
 #: themes/default/templates/projects/_helpers.html:379
 msgid "Project Creator"
-msgstr ""
+msgstr "Projekt skapare"
 
 #: themes/default/templates/projects/_helpers.html:382
 msgid "Remove Co-owner"
-msgstr ""
+msgstr "Ta bort delägare"
 
 #: themes/default/templates/projects/_helpers.html:388
 msgid "Add Co-owner"
-msgstr ""
+msgstr "Lägg till delägare"
 
 #: themes/default/templates/projects/actions.html:9
 msgid "Edit the project details"
-msgstr ""
+msgstr "Redigera projektinformationen"
 
 #: themes/default/templates/projects/actions.html:10
 #: themes/default/templates/projects/tasks.html:16
 msgid "Edit the task presenter"
-msgstr ""
+msgstr "Redigera uppgiftspresentatören"
 
 #: themes/default/templates/projects/actions.html:11
 #: themes/default/templates/projects/importers/csv.html:5
@@ -1177,141 +1252,145 @@ msgstr ""
 #: themes/default/templates/projects/importers/twitter.html:5
 #: themes/default/templates/projects/importers/youtube.html:6
 msgid "Import tasks"
-msgstr ""
+msgstr "Importera uppgifter"
 
 #: themes/default/templates/projects/actions.html:12
 #: themes/default/templates/projects/settings.html:18
 msgid "Delete the project"
-msgstr ""
+msgstr "Ta bort projektet"
 
 #: themes/default/templates/projects/auditlog.html:10
 msgid "When"
-msgstr ""
+msgstr "När"
 
 #: themes/default/templates/projects/auditlog.html:11
 msgid "Who"
-msgstr ""
+msgstr "Vem"
 
 #: themes/default/templates/projects/auditlog.html:12
 msgid "Source"
-msgstr ""
+msgstr "Källa"
 
 #: themes/default/templates/projects/auditlog.html:13
 msgid "Action"
-msgstr ""
+msgstr "Åtgärd"
 
 #: themes/default/templates/projects/auditlog.html:14
 msgid "Attribute"
-msgstr ""
+msgstr "Attribut"
 
 #: themes/default/templates/projects/auditlog.html:15
 msgid "Old Value"
-msgstr ""
+msgstr "Gammalt Värde"
 
 #: themes/default/templates/projects/auditlog.html:16
 msgid "New Value"
-msgstr ""
+msgstr "Nytt Värde"
 
 #: themes/default/templates/projects/auditlog.html:21
 msgid "You"
-msgstr ""
+msgstr "Du"
 
 #: themes/default/templates/projects/auditlog.html:32
 msgid "Sorry! No logs so far."
-msgstr ""
+msgstr "Inga loggar hittills tyvärr."
 
 #: themes/default/templates/projects/base.html:39
 #: themes/default/templates/projects/delete.html:29
 #: themes/default/templates/projects/publish.html:30
 msgid "Sorry! This project does not exist."
-msgstr ""
+msgstr "Detta projekt existerar tyvärr inte."
 
 #: themes/default/templates/projects/blog.html:8
 msgid "Create a new blog post"
-msgstr ""
+msgstr "Skapa ett nytt blogginlägg"
 
 #: themes/default/templates/projects/blog.html:15
 msgid "Read more"
-msgstr ""
+msgstr "Läs mer"
 
 #: themes/default/templates/projects/blog_post.html:13
 msgid "Author: "
-msgstr ""
+msgstr "Auktor"
 
 #: themes/default/templates/projects/blog_post.html:15
 msgid "Written: "
-msgstr ""
+msgstr "Skriven"
 
 #: themes/default/templates/projects/blog_post.html:18
 #: themes/default/templates/projects/task_autoimporter.html:41
 msgid "Back"
-msgstr ""
+msgstr "Tillbaka"
 
 #: themes/default/templates/projects/blog_post.html:29
 #: themes/default/templates/projects/settings.html:9
 msgid "Edit"
-msgstr ""
+msgstr "Redigera"
 
 #: themes/default/templates/projects/coowners.html:9
 #: themes/default/templates/projects/settings.html:28
 msgid "Manage Co-owners"
-msgstr ""
+msgstr "Hantera delägare"
 
 #: themes/default/templates/projects/coowners.html:27
 msgid "Users that can be added as co-owners to the project"
-msgstr ""
+msgstr "Användare som kan läggas till som delägare i projektet"
 
 #: themes/default/templates/projects/coowners.html:37
 msgid "Current Co-owners"
-msgstr ""
+msgstr "Närvarande delägare"
 
 #: themes/default/templates/projects/delete.html:12
 msgid "Delete project"
-msgstr ""
+msgstr "Ta bort projekt"
 
 #: themes/default/templates/projects/delete.html:14
 msgid "If you delete the project and its tasks, it will be gone forever!"
-msgstr ""
+msgstr "Om du tar bort projektet och dess uppgifter försvinner det för alltid!"
 
 #: themes/default/templates/projects/delete.html:20
 msgid ""
 "Are you sure you want to delete this project and all its tasks and "
 "associated task runs?"
 msgstr ""
+"Är du säker på att du vill ta bort projektet och alla dess uppgifter och "
+"associerad uppgiftskörningar?"
 
 #: themes/default/templates/projects/delete.html:22
 msgid "Yes, delete it"
-msgstr ""
+msgstr "Ja, ta bort det"
 
 #: themes/default/templates/projects/delete.html:23
 msgid "No, do not delete it!"
-msgstr ""
+msgstr "Nej, ta inte bort det!"
 
 #: themes/default/templates/projects/export.html:5
 msgid "Export All Tasks and Task Runs"
-msgstr ""
+msgstr "Nej, ta inte bort det!"
 
 #: themes/default/templates/projects/export.html:10
 msgid "You can export and download"
-msgstr ""
+msgstr "Du kan exportera och ladda ne"
 
 #: themes/default/templates/projects/export.html:10
 msgid "all the available"
-msgstr ""
+msgstr "alla tillgängliga"
 
 #: themes/default/templates/projects/export.html:10
 msgid ""
 "Tasks and Task Runs (the submitted answers by the users) in CSV or JSON "
 "formats."
 msgstr ""
+"Uppgifter och uppgiftskörningar (användarnas svar) i CSV eller JSON "
+"format."
 
 #: themes/default/templates/projects/export.html:13
 msgid "Export in CSV format"
-msgstr ""
+msgstr "Exportera i CSV-format"
 
 #: themes/default/templates/projects/export.html:16
 msgid "Export tasks in CSV format"
-msgstr ""
+msgstr "Exportera i CSV-format"
 
 #: themes/default/templates/projects/export.html:16
 #: themes/default/templates/projects/export.html:19
@@ -1324,129 +1403,134 @@ msgstr ""
 #: themes/default/templates/projects/tasks.html:11
 #: themes/default/templates/projects/tasks.html:38
 msgid "Export"
-msgstr ""
+msgstr "Exportera"
 
 #: themes/default/templates/projects/export.html:19
 #: themes/default/templates/projects/export.html:33
 #: themes/default/templates/projects/export.html:56
 msgid "Task Runs"
-msgstr ""
+msgstr "Uppgiftskörningar"
 
 #: themes/default/templates/projects/export.html:19
 msgid "Export task runs in CSV format"
-msgstr ""
+msgstr "Exportera uppgiftskörningar i CSV-format"
 
 #: themes/default/templates/projects/export.html:22
 msgid "Export results in CSV format"
-msgstr ""
+msgstr "Exportera resultat i CSV-format"
 
 #: themes/default/templates/projects/export.html:27
 msgid "Export in JSON format"
-msgstr ""
+msgstr "Exportera i JSON-format"
 
 #: themes/default/templates/projects/export.html:30
 msgid "Export tasks in JSON format"
-msgstr ""
+msgstr "Exportera uppgifter i JSON-format"
 
 #: themes/default/templates/projects/export.html:33
 msgid "Export task runs in JSON format"
-msgstr ""
+msgstr "Exportera uppgiftskörningar i JSON-format"
 
 #: themes/default/templates/projects/export.html:36
 msgid "Export results in JSON format"
-msgstr ""
+msgstr "Exportera resultat i JSON-format"
 
 #: themes/default/templates/projects/export.html:44
 msgid "Export to the"
-msgstr ""
+msgstr "Exportera till"
 
 #: themes/default/templates/projects/export.html:46
 msgid "Export to a CKAN server"
-msgstr ""
+msgstr "Exportera till en CKAN-server"
 
 #: themes/default/templates/projects/export.html:48
 msgid "IMPORTANT"
-msgstr ""
+msgstr "VIKTIGT"
 
 #: themes/default/templates/projects/export.html:48
 msgid ""
 "This export option stills in beta mode and may fail in the CKAN server. "
 "If you get an error, please send an e-mail to info@scifabric.com"
 msgstr ""
+"Det här exportalternativet fortfarande i beta-läge och kan misslyckas i "
+"CKAN-servern. Om du får ett fel, skicka ett e-postmeddelande till "
+"info@scifabric.com"
 
 #: themes/default/templates/projects/export.html:53
 #: themes/default/templates/projects/tasks_browse.html:13
 #: themes/default/templates/projects/tasks_browse.html:25
 #: themes/default/templates/projects/tasks_browse.html:27
 msgid "Task"
-msgstr ""
+msgstr "Uppgift"
 
 #: themes/default/templates/projects/export.html:53
 msgid "Export tasks into a CKAN server "
-msgstr ""
+msgstr "Exportera uppgifter till en CKAN-server"
 
 #: themes/default/templates/projects/export.html:56
 msgid "Export task runs into a CKAN server"
-msgstr ""
+msgstr "Exportera uppgiftskörningar till en CKAN-server"
 
 #: themes/default/templates/projects/export.html:58
 msgid "You don't have a Datahub.io API key in your"
-msgstr ""
+msgstr "Du har ingen Datahub.io API-nyckel i din"
 
 #: themes/default/templates/projects/export.html:58
 msgid "account. Please,"
-msgstr ""
+msgstr "konto. Snälla du,"
 
 #: themes/default/templates/projects/export.html:58
 msgid "create an account"
-msgstr ""
+msgstr "skapa ett konto"
 
 #: themes/default/templates/projects/export.html:58
 msgid "and copy/paste the API key in your profile in order to use this exporter"
 msgstr ""
+"och kopiera / klistra in API-nyckeln i din profil för att kunna använda "
+"denna exportör"
 
 #: themes/default/templates/projects/export.html:67
 msgid "Exporting data..."
-msgstr ""
+msgstr "Exporterar data..."
 
 #: themes/default/templates/projects/index.html:17
 msgid "Draft"
-msgstr ""
+msgstr "Utkast"
 
 #: themes/default/templates/projects/index.html:25
 msgid "A special selection of the most interesting projects"
-msgstr ""
+msgstr "Ett speciellt urval av de mest intressanta projekten"
 
 #: themes/default/templates/projects/index.html:28
 msgid "Work in progress projects"
-msgstr ""
+msgstr "Pågående projekt"
 
 #: themes/default/templates/projects/index.html:44
 msgid "Sorry, there are no published projects for this category yet"
-msgstr ""
+msgstr "Det finns tyvärr inga publicerade projekt för denna kategori än"
 
 #: themes/default/templates/projects/new.html:15
 msgid "Project"
-msgstr ""
+msgstr "Projekt"
 
 #: themes/default/templates/projects/new.html:15
 msgid "Create a new project"
-msgstr ""
+msgstr "Skapa ett nytt projekt"
 
 #: themes/default/templates/projects/new.html:19
 #: themes/default/templates/projects/update.html:31
 msgid "The name of the project"
-msgstr ""
+msgstr "Projektets namn"
 
 #: themes/default/templates/projects/new.html:20
 #: themes/default/templates/projects/update.html:32
 msgid "Short name or slug for the project"
-msgstr ""
+msgstr "Kort namn eller slug för projektet"
 
 #: themes/default/templates/projects/new.html:20
 #: themes/default/templates/projects/update.html:32
 msgid "Project slug:"
-msgstr ""
+msgstr "Projekt slug"
 
 #: themes/default/templates/projects/new.html:21
 msgid ""
@@ -1462,39 +1546,48 @@ msgid ""
 "\n"
 "(you can use Markdown to give format to your description!)"
 msgstr ""
+"Förklara ditt projekt\n"
+"· Varför? Varför skapar du det här projektet, vad vill du uppnå med det\n"
+"· Hur? Förklara hur ditt projekt fungerar\n"
+"· Hur du kan hjälpa: Förklara för volontärerna hur de kan hjälpa och "
+"bidra till målet för ditt projekt\n"
+"· Kommer du att göra skillnad? Förklara för volontärer varför deras "
+"bidrag är viktigt och hur resultatet av din  projekt kan hjälpa till att "
+"förändra saker!\n"
+" (du kan använda Markdown för att formatera din beskrivning!)"
 
 #: themes/default/templates/projects/new.html:29
 msgid "Create the project"
-msgstr ""
+msgstr "Skapa projektet"
 
 #: themes/default/templates/projects/new_blogpost.html:5
 #: themes/default/templates/projects/update_blogpost.html:5
 msgid "Write a new blog post"
-msgstr ""
+msgstr "Skriv ett nytt blogginlägg för annons"
 
 #: themes/default/templates/projects/non_stats.html:13
 msgid "Sorry, the project does not have tasks to process and show some statistics"
-msgstr ""
+msgstr " Tyvärr, projektet har inga uppgifter att bearbeta och visa viss statistik"
 
 #: themes/default/templates/projects/password.html:14
 msgid "Enter the password to contribute to this project:"
-msgstr ""
+msgstr "Ange lösenordet för att bidra till detta projekt:"
 
 #: themes/default/templates/projects/password.html:18
 msgid "Project password"
-msgstr ""
+msgstr "Projektlösenord"
 
 #: themes/default/templates/projects/password.html:21
 msgid "Submit"
-msgstr ""
+msgstr "Skicka in"
 
 #: themes/default/templates/projects/publish.html:12
 msgid "Publish the project"
-msgstr ""
+msgstr "Publicera projektet"
 
 #: themes/default/templates/projects/publish.html:14
 msgid "Please read carefully!"
-msgstr ""
+msgstr "Vänligen läs noggrant!"
 
 #: themes/default/templates/projects/publish.html:15
 msgid ""
@@ -1503,6 +1596,9 @@ msgid ""
 "the taskruns (answers) that may have been created during the test phase "
 "will be flushed and your project will start fresh."
 msgstr ""
+"Du håller på att publicera ditt projekt. Detta KAN INTE ångras! När din "
+"projekt har publicerats kommer folk att kunna bidra till det och svar "
+"börjar lagras."
 
 #: themes/default/templates/projects/publish.html:16
 msgid ""
@@ -1510,146 +1606,149 @@ msgid ""
 "sure it does. Otherwise you can work on it and publish it once it works "
 "fine."
 msgstr ""
+"Det betyder att ditt projekt ska fungera ordentligt, så snälla gör säker "
+"på att det gör det. Annars kan du arbeta med det och publicera när det "
+"fungerar bra."
 
 #: themes/default/templates/projects/publish.html:21
 msgid "Are you sure you want to publish this project?"
-msgstr ""
+msgstr "Är du säker på att du vill publicera detta projekt?"
 
 #: themes/default/templates/projects/publish.html:23
 msgid "Yes, publish it"
-msgstr ""
+msgstr "Ja, publicera det"
 
 #: themes/default/templates/projects/publish.html:24
 msgid "No, do not publish it!"
-msgstr ""
+msgstr "Nej, publicera det inte!"
 
 #: themes/default/templates/projects/results.html:18
 msgid "The project owner has not created/published/visualized any results yet."
-msgstr ""
+msgstr "Projektägaren har inte skapat/publicerat/visualiserat några resultat än."
 
 #: themes/default/templates/projects/settings.html:3
 msgid "Project Settings"
-msgstr ""
+msgstr "Projektinställningar"
 
 #: themes/default/templates/projects/settings.html:9
 msgid "Project details"
-msgstr ""
+msgstr "Projektinformationen"
 
 #: themes/default/templates/projects/settings.html:9
 msgid "Edit the name, description, etc."
-msgstr ""
+msgstr "Redigera namn, beskrivning m.m."
 
 #: themes/default/templates/projects/settings.html:12
 #: themes/default/templates/projects/task_settings.html:4
 msgid "Task Settings"
-msgstr ""
+msgstr "Uppgiftsinställningar"
 
 #: themes/default/templates/projects/settings.html:12
 msgid "Change the task settings: redundancy, priority, etc."
-msgstr ""
+msgstr "Ändra uppgiftsinställningarna: redundans, prioritet m.m."
 
 #: themes/default/templates/projects/settings.html:18
 msgid "Delete the project, tasks, task runs and answers."
-msgstr ""
+msgstr "Ta bort projektet, uppgifter, uppgiftskörningar och svar."
 
 #: themes/default/templates/projects/settings.html:21
 msgid "Write a blog post about your project."
-msgstr ""
+msgstr "Skriv ett blogginlägg om ditt projekt."
 
 #: themes/default/templates/projects/settings.html:21
 msgid "Write"
-msgstr ""
+msgstr "Skriv"
 
 #: themes/default/templates/projects/settings.html:28
 msgid "Add/Remove Co-owners."
-msgstr ""
+msgstr "Lägg till / ta bort delägare."
 
 #: themes/default/templates/projects/settings.html:28
 msgid "Co-owners"
-msgstr ""
+msgstr "Delägare"
 
 #: themes/default/templates/projects/settings.html:31
 msgid "Export Project Report"
-msgstr ""
+msgstr "Exportera projektrapport"
 
 #: themes/default/templates/projects/settings.html:31
 msgid "Export project report"
-msgstr ""
+msgstr "Exportera projektrapport"
 
 #: themes/default/templates/projects/stats.html:30
 #: themes/default/templates/projects/task_priority.html:14
 msgid "Important"
-msgstr ""
+msgstr "Viktig"
 
 #: themes/default/templates/projects/stats.html:30
 msgid "Data have been"
-msgstr ""
+msgstr "Data har varit"
 
 #: themes/default/templates/projects/stats.html:30
 msgid "anonymized"
-msgstr ""
+msgstr "anonymiserad"
 
 #: themes/default/templates/projects/stats.html:38
 msgid "Average contribution time per task"
-msgstr ""
+msgstr "Genomsnittlig bidragstid per uppgift"
 
 #: themes/default/templates/projects/stats.html:39
 msgid "seconds"
-msgstr ""
+msgstr "sekunder"
 
 #: themes/default/templates/projects/stats.html:47
 msgid "Distribution of Answers per Hour"
-msgstr ""
+msgstr "Fördelning av Svar per Timme"
 
 #: themes/default/templates/projects/stats.html:77
 msgid "Completed Tasks in the last 15 days"
-msgstr ""
+msgstr "Slutförda Uppgifter under de senaste 15 dagarna"
 
 #: themes/default/templates/projects/stats.html:78
 #: themes/default/templates/projects/stats.html:150
 msgid "select an area to zoom, click to reset the chart"
-msgstr ""
+msgstr "välj ett område att zooma in, klicka för att återställa diagrammet"
 
 #: themes/default/templates/projects/stats.html:149
 msgid "Answers per day"
-msgstr ""
+msgstr "Svar per dag"
 
 #: themes/default/templates/projects/stats.html:162
 msgid "answers were submitted this day"
-msgstr ""
+msgstr "svar skickades in denna dag"
 
 #: themes/default/templates/projects/stats.html:221
 msgid "Distribution of Answers"
-msgstr ""
+msgstr "Fördelning av svar"
 
 #: themes/default/templates/projects/stats.html:227
 msgid "Type"
-msgstr ""
+msgstr "Typ"
 
 #: themes/default/templates/projects/stats.html:229
 msgid "Percentage"
-msgstr ""
+msgstr "Procentsats"
 
 #: themes/default/templates/projects/stats.html:268
 msgid "Details about Anonymous Users"
-msgstr ""
+msgstr "Detaljer om Anonyma Användare"
 
 #: themes/default/templates/projects/stats.html:271
 msgid "anonymous users have"
-msgstr ""
+msgstr "anonyma användare har"
 
 #: themes/default/templates/projects/stats.html:271
 #: themes/default/templates/projects/stats.html:362
 msgid "participated"
-msgstr ""
+msgstr "deltog"
 
 #: themes/default/templates/projects/stats.html:278
 msgid "Country"
-msgstr ""
+msgstr "Land"
 
 #: themes/default/templates/projects/stats.html:279
 msgid "City"
-msgstr ""
+msgstr "Stad"
 
 #: themes/default/templates/projects/stats.html:300
 #: themes/default/templates/projects/stats.html:301
@@ -1658,94 +1757,94 @@ msgstr ""
 #: themes/default/templates/projects/stats.html:304
 #: themes/default/templates/projects/stats.html:369
 msgid "User"
-msgstr ""
+msgstr "Användare"
 
 #: themes/default/templates/projects/stats.html:320
 #: themes/default/templates/stats/global.html:166
 msgid "This page includes GeoLite data created by MaxMind, available from"
-msgstr ""
+msgstr "Denna sida innehåller GeoLite-data som skapats av MaxMind, tillgängliga fr"
 
 #: themes/default/templates/projects/stats.html:359
 msgid "Details about Authenticated Users"
-msgstr ""
+msgstr "Detaljer om Autentiserade Användare"
 
 #: themes/default/templates/projects/stats.html:362
 msgid "authenticated users have"
-msgstr ""
+msgstr "autentiserade användare har"
 
 #: themes/default/templates/projects/stats.html:364
 msgid "Top 5 users"
-msgstr ""
+msgstr "Topp 5 användare"
 
 #: themes/default/templates/projects/task_autoimport_options.html:13
 msgid "Setup task autoimporter"
-msgstr ""
+msgstr "Installera uppgift autoimpor"
 
 #: themes/default/templates/projects/snippets/options.html:4
 #: themes/default/templates/projects/task_autoimport_options.html:16
 #: themes/default/templates/projects/task_import_options.html:8
 msgid "Use one of the following available"
-msgstr ""
+msgstr "Använd något av följande tillgängliga"
 
 #: themes/default/templates/projects/task_autoimport_options.html:17
 #: themes/default/templates/projects/task_import_options.html:9
 msgid "importers"
-msgstr ""
+msgstr "importörer"
 
 #: themes/default/templates/projects/task_autoimport_options.html:17
 msgid "to setup as the autoimporter"
-msgstr ""
+msgstr "för att ställa in som autoimportören"
 
 #: themes/default/templates/projects/task_autoimporter.html:14
 msgid "Currently configured autoimport"
-msgstr ""
+msgstr "För närvarande konfigurerad autoimpor"
 
 #: themes/default/templates/projects/task_autoimporter.html:15
 msgid "You currently have the following autoimporter configured"
-msgstr ""
+msgstr "Du har för närvarande konfigurerat följande autoimporter"
 
 #: themes/default/templates/projects/task_import_options.html:5
 #: themes/default/templates/projects/tasks.html:8
 msgid "Import Tasks"
-msgstr ""
+msgstr "Importera Uppgifter"
 
 #: themes/default/templates/projects/task_import_options.html:9
 msgid "to import tasks..."
-msgstr ""
+msgstr "för att importera uppgifter ..."
 
 #: themes/default/templates/projects/task_import_options.html:21
 msgid "... or import a set of"
-msgstr ""
+msgstr "... eller importera en uppsättning"
 
 #: themes/default/templates/projects/task_import_options.html:21
 msgid "template tasks"
-msgstr ""
+msgstr "malluppgifter"
 
 #: themes/default/templates/projects/task_n_answers.html:4
 msgid "Task Redundancy"
-msgstr ""
+msgstr "Uppgiftsredundans"
 
 #: themes/default/templates/projects/task_n_answers.html:11
 msgid "The number of answers per tasks that you want for the project"
-msgstr ""
+msgstr "Antalet svar per uppgifter du vill ha för projekte"
 
 #: themes/default/templates/projects/task_n_answers.html:13
 #: themes/default/templates/projects/task_scheduler.html:28
 msgid "Set redundancy"
-msgstr ""
+msgstr "Ställ in redundans"
 
 #: themes/default/templates/projects/task_priority.html:4
 #: themes/default/templates/projects/task_settings.html:15
 msgid "Task Priority"
-msgstr ""
+msgstr "Uppgiftsprioritet"
 
 #: themes/default/templates/projects/task_priority.html:8
 msgid "You can change the"
-msgstr ""
+msgstr "Du kan ändra"
 
 #: themes/default/templates/projects/task_priority.html:9
 msgid "priority"
-msgstr ""
+msgstr "prioritet"
 
 #: themes/default/templates/projects/task_priority.html:9
 msgid ""
@@ -1753,53 +1852,59 @@ msgid ""
 "providing a list of task IDs separated by commas. The lowest\n"
 "priority is"
 msgstr ""
+"av en eller flera uppgifter,\n"
+"tillhandahåller en lista över uppgifts-ID separerade med kommatecken. "
+"Lägsta\n"
+"prioritet är"
 
 #: themes/default/templates/projects/task_priority.html:12
 msgid "and the highest priority is"
-msgstr ""
+msgstr "och högsta prioritet är"
 
 #: themes/default/templates/projects/task_priority.html:14
 msgid ""
 "The priority value is only\n"
 "respected by the"
 msgstr ""
+"Prioritetsvärdet är endast\n"
+"respekterad av"
 
 #: themes/default/templates/projects/task_priority.html:15
 msgid "default scheduler"
-msgstr ""
+msgstr "standardschemaläggaren"
 
 #: themes/default/templates/projects/task_priority.html:20
 msgid "Comma separated Task.IDs i.e.: 3, 532, 100"
-msgstr ""
+msgstr "msgstr \"Kommaseparerade Task.IDs t.ex.: 3, 532, 100\""
 
 #: themes/default/templates/projects/task_priority.html:21
 msgid "Priority value between 0.0 and 1.0"
-msgstr ""
+msgstr "Prioritetsvärde mellan 0,0 och 1,0"
 
 #: themes/default/templates/projects/task_priority.html:23
 msgid "Change Priority"
-msgstr ""
+msgstr "Ändra priorite"
 
 #: themes/default/templates/projects/task_scheduler.html:4
 #: themes/default/templates/projects/task_settings.html:12
 msgid "Task Scheduler"
-msgstr ""
+msgstr "Schemaläggaren"
 
 #: themes/default/templates/projects/task_scheduler.html:8
 msgid "You can choose from the following schedulers"
-msgstr ""
+msgstr "Du kan välja mellan följande schemaläggare"
 
 #: themes/default/templates/projects/task_scheduler.html:10
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: themes/default/templates/projects/task_scheduler.html:10
 msgid "or"
-msgstr ""
+msgstr "eller"
 
 #: themes/default/templates/projects/task_scheduler.html:11
 msgid "Depth First"
-msgstr ""
+msgstr "Djup Först"
 
 #: themes/default/templates/projects/task_scheduler.html:11
 msgid ""
@@ -1807,10 +1912,12 @@ msgid ""
 "    has not been completed (the value of number of answers has\n"
 "    not achieved) excluding the current user"
 msgstr ""
+"returnerar en uppgift som har inte slutförts (värdet på antalet svar har "
+"inte uppnått) exklusive nuvarande användare"
 
 #: themes/default/templates/projects/task_scheduler.html:14
 msgid "Breadth First"
-msgstr ""
+msgstr "Bredd Först"
 
 #: themes/default/templates/projects/task_scheduler.html:14
 msgid ""
@@ -1818,10 +1925,13 @@ msgid ""
 "    task which has the least number of task runs (answers)\n"
 "    excluding the current user"
 msgstr ""
+" returnerar en uppgift som\n"
+" har inte slutförts (värdet på antalet av svar har\n"
+" inte uppnått) exklusive aktuel användaren"
 
 #: themes/default/templates/projects/task_scheduler.html:17
 msgid "Depth First All"
-msgstr ""
+msgstr "Djup Först Alla"
 
 #: themes/default/templates/projects/task_scheduler.html:17
 msgid ""
@@ -1830,43 +1940,46 @@ msgid ""
 "into\n"
 "    account the task.state"
 msgstr ""
+"returnerar en \n"
+"uppgift där den nuvarande användaren inte har deltagit. Det tar inte in \n"
+"konto task.state"
 
 #: themes/default/templates/projects/task_settings.html:12
 msgid "Change how the tasks are delivered to volunteers"
-msgstr ""
+msgstr "Ändra hur uppgifterna levereras till volontärer"
 
 #: themes/default/templates/projects/task_settings.html:12
 #: themes/default/templates/projects/task_settings.html:15
 msgid "Scheduler"
-msgstr ""
+msgstr "Schemaläggare"
 
 #: themes/default/templates/projects/task_settings.html:15
 msgid "Change the priority of the tasks"
-msgstr ""
+msgstr "Ändra prioriteringen för uppgiftern"
 
 #: themes/default/templates/projects/task_settings.html:20
 msgid "Delete Tasks"
-msgstr ""
+msgstr "Ta bort uppgifter"
 
 #: themes/default/templates/projects/task_settings.html:20
 msgid "Delete all the tasks and associated answers"
-msgstr ""
+msgstr "Ta bort alla uppgifter och tillhörande svar"
 
 #: themes/default/templates/projects/task_settings.html:23
 msgid "Tasks Redundancy"
-msgstr ""
+msgstr "Uppgiftsredundans"
 
 #: themes/default/templates/projects/task_settings.html:23
 msgid "Change the redundancy level for the tasks"
-msgstr ""
+msgstr "Ändra redundansnivån för uppgifterna\""
 
 #: themes/default/templates/projects/task_settings.html:23
 msgid "Redundancy"
-msgstr ""
+msgstr "Redundans"
 
 #: themes/default/templates/projects/tasks.html:8
 msgid "Import tasks from templates, GDrive, or CSV"
-msgstr ""
+msgstr "Importera uppgifter från mallar, GDrive eller CSV"
 
 #: themes/default/templates/projects/importers/csv.html:11
 #: themes/default/templates/projects/importers/dropbox.html:22
@@ -1880,216 +1993,228 @@ msgstr ""
 #: themes/default/templates/projects/importers/youtube.html:29
 #: themes/default/templates/projects/tasks.html:8
 msgid "Import"
-msgstr ""
+msgstr "Importera"
 
 #: themes/default/templates/projects/tasks.html:11
 #: themes/default/templates/projects/tasks.html:38
 msgid "Export Tasks"
-msgstr ""
+msgstr "Exportera Uppgifter"
 
 #: themes/default/templates/projects/tasks.html:11
 #: themes/default/templates/projects/tasks.html:38
 msgid "Export tasks to JSON, CSV or a CKAN server"
-msgstr ""
+msgstr "Exportera uppgifter till JSON, CSV eller en CKAN-server"
 
 #: themes/default/templates/projects/tasks.html:16
 msgid "Task Presenter"
-msgstr ""
+msgstr "Task Presenter"
 
 #: themes/default/templates/projects/tasks.html:16
 msgid "Editor"
-msgstr ""
+msgstr "Redaktör"
 
 #: themes/default/templates/projects/tasks.html:19
 msgid "Configure the task scheduler, redundancy, etc."
-msgstr ""
+msgstr "Konfigurera uppgiftsschemaläggaren, redundansen m.m."
 
 #: themes/default/templates/projects/tasks.html:24
 #: themes/default/templates/projects/tasks.html:35
 msgid "Browse"
-msgstr ""
+msgstr "Bläddra"
 
 #: themes/default/templates/projects/tasks.html:24
 #: themes/default/templates/projects/tasks.html:35
 msgid "Check the status of the tasks"
-msgstr ""
+msgstr "Kontrollera statusen för uppgifterna"
 
 #: themes/default/templates/projects/tasks.html:28
 msgid "Auto-import Tasks"
-msgstr ""
+msgstr "Autoimporta uppgifter"
 
 #: themes/default/templates/projects/tasks.html:28
 msgid "Import tasks regularly and automatically"
-msgstr ""
+msgstr "Importera uppgifter regelbundet och automatiskt"
 
 #: themes/default/templates/projects/tasks.html:28
 msgid "Setup"
-msgstr ""
+msgstr "Uppstart"
 
 #: themes/default/templates/projects/tasks_browse.html:5
 msgid "Browse tasks"
-msgstr ""
+msgstr "Bläddra bland uppgifter"
 
 #: themes/default/templates/projects/tasks_browse.html:10
 msgid "This page shows all the available tasks for this project"
-msgstr ""
+msgstr "Denna sida visar alla tillgängliga uppgifter för detta projekt"
 
 #: themes/default/templates/projects/tasks_browse.html:11
 msgid "For each task, you can find the following information"
-msgstr ""
+msgstr "För varje uppgift kan du hitta följande information"
 
 #: themes/default/templates/projects/tasks_browse.html:13
 msgid "This number identifies the task for the project and it is unique"
-msgstr ""
+msgstr "Detta nummer identifierar uppgiften för projektet och den är unik"
 
 #: themes/default/templates/projects/tasks_browse.html:14
 msgid ""
 "The first number shows how many answers have been submitted for the task "
 "and the"
 msgstr ""
+"Den första siffran visar hur många svar som har skickats in för uppgiften"
+" och den"
 
 #: themes/default/templates/projects/tasks_browse.html:14
 msgid ""
 "This redundancy method will help to detect errors, typos, data forging, "
 "etc. when the task has been completed"
 msgstr ""
+"Denna redundansmetod hjälper till att upptäcka fel, stavfel, "
+"datafalsningetc. när uppgiften är klar"
 
 #: themes/default/templates/projects/tasks_browse.html:14
 msgid "second number"
-msgstr ""
+msgstr "andra numret"
 
 #: themes/default/templates/projects/tasks_browse.html:14
 msgid "how many need to be obtained to mark the task as"
-msgstr ""
+msgstr "hur många som behövs för att markera uppgiften som"
 
 #: themes/default/templates/projects/tasks_browse.html:15
 msgid "Progress Bar"
-msgstr ""
+msgstr "Progress Bar"
 
 #: themes/default/templates/projects/tasks_browse.html:15
 msgid ""
 "The progress progress-bar will the percentage that has been completed for"
 " the task"
 msgstr ""
+"Förloppsförloppsfältet kommer att vara den procentsats som har slutförts "
+"för uppgiften"
 
 #: themes/default/templates/projects/tasks_browse.html:41
 msgid "Download Task Results"
-msgstr ""
+msgstr "Ladda ner uppgiftsresultat"
 
 #: themes/default/templates/projects/tasks_browse.html:45
 msgid "Download Partial results"
-msgstr ""
+msgstr "Ladda ner Delresultat"
 
 #: themes/default/templates/projects/tasks_browse.html:48
 msgid "Nothing to download yet"
-msgstr ""
+msgstr "Inget att ladda ner än"
 
 #: themes/default/templates/projects/transferownership.html:5
 msgid "settings"
-msgstr ""
+msgstr "inställningar"
 
 #: themes/default/templates/projects/transferownership.html:10
 #: themes/default/templates/projects/update.html:66
 msgid "Transfer project ownership"
-msgstr ""
+msgstr "Överför projektägande"
 
 #: themes/default/templates/projects/transferownership.html:12
 msgid ""
 "If you change the ownership of the project you will not be able to modify"
 " it anymore. This cannot be undone!"
 msgstr ""
+"Om du ändrar projektets ägande kommer du inte att kunna ändra det längre."
+" Detta kan inte ångras!"
 
 #: themes/default/templates/projects/transferownership.html:14
 msgid "Trasfer ownership"
-msgstr ""
+msgstr "Överför äganderätten"
 
 #: themes/default/templates/projects/tutorial.html:14
 msgid "Start contributing"
-msgstr ""
+msgstr "Börja bidra"
 
 #: themes/default/templates/projects/update.html:8
 msgid "Update the avatar"
-msgstr ""
+msgstr "Uppdatera avatar"
 
 #: themes/default/templates/projects/update.html:27
 msgid "Update project details"
-msgstr ""
+msgstr "Uppdatera projektinformation"
 
 #: themes/default/templates/projects/update.html:33
 msgid "Give some details about the project"
-msgstr ""
+msgstr "Ge några detaljer om projektet"
 
 #: themes/default/templates/projects/update.html:34
 msgid "Explain the project (use Markdown!)"
-msgstr ""
+msgstr "Förklara projektet (använd Markdown!)"
 
 #: themes/default/templates/projects/update.html:36
 msgid "Check if you want to allow anonymous users contribute to your project"
 msgstr ""
+"Kontrollera om du vill tillåta anonyma användare att bidra till ditt "
+"projekt"
 
 #: themes/default/templates/projects/update.html:37
 msgid "Check if you want to disable anonymous users to download project's data"
 msgstr ""
+"Kontrollera om du vill inaktivera anonyma användare för att ladda ner "
+"projektets data"
 
 #: themes/default/templates/projects/update.html:46
 msgid "Project secret key"
-msgstr ""
+msgstr "Projekt hemlig nyckel"
 
 #: themes/default/templates/projects/update.html:55
 msgid "Reset secret key"
-msgstr ""
+msgstr "Återställ hemlig nyckel"
 
 #: themes/default/templates/projects/update.html:58
 msgid "Webpush notifications"
-msgstr ""
+msgstr "Webpush underrättelse"
 
 #: themes/default/templates/projects/update.html:59
 msgid "Warning"
-msgstr ""
+msgstr "Varning"
 
 #: themes/default/templates/projects/update.html:59
 msgid "Once you enable the notifications, you cannot disable them."
-msgstr ""
+msgstr "När du har aktiverat aviseringarna kan du inte inaktivera dem."
 
 #: themes/default/templates/projects/update.html:61
 msgid "Activate"
-msgstr ""
+msgstr "Aktivera"
 
 #: themes/default/templates/projects/update.html:63
 msgid "Enabled"
-msgstr ""
+msgstr "Aktiverad"
 
 #: themes/default/templates/projects/update.html:67
 msgid "Change owner"
-msgstr ""
+msgstr "Byt ägare"
 
 #: themes/default/templates/projects/webhook.html:19
 msgid "Created"
-msgstr ""
+msgstr "Skapad"
 
 #: themes/default/templates/projects/webhook.html:20
 msgid "Updated"
-msgstr ""
+msgstr "Uppdaterad"
 
 #: themes/default/templates/projects/webhook.html:21
 msgid "Payload"
-msgstr ""
+msgstr "Nyttolast"
 
 #: themes/default/templates/projects/webhook.html:22
 msgid "Response"
-msgstr ""
+msgstr "Svar"
 
 #: themes/default/templates/projects/webhook.html:23
 msgid "Response Status Code"
-msgstr ""
+msgstr "Svarsstatuskod"
 
 #: themes/default/templates/projects/webhook.html:24
 msgid "Repeat"
-msgstr ""
+msgstr "Upprepa"
 
 #: themes/default/templates/projects/importers/csv.html:10
 msgid "From a CSV file"
-msgstr ""
+msgstr "Från en CSV-fil"
 
 #: themes/default/templates/projects/importers/csv.html:17
 #: themes/default/templates/projects/importers/dropbox.html:34
@@ -2102,11 +2227,11 @@ msgstr ""
 #: themes/default/templates/projects/importers/twitter.html:45
 #: themes/default/templates/projects/importers/youtube.html:35
 msgid "Importing data..."
-msgstr ""
+msgstr "Importerar data..."
 
 #: themes/default/templates/projects/importers/dropbox.html:9
 msgid "From your Dropbox account"
-msgstr ""
+msgstr "Från ditt Dropbox-konto"
 
 #: themes/default/templates/projects/importers/dropbox.html:18
 #: themes/default/templates/projects/importers/epicollect.html:14
@@ -2116,7 +2241,7 @@ msgstr ""
 #: themes/default/templates/projects/importers/s3.html:16
 #: themes/default/templates/projects/importers/twitter.html:28
 msgid "For more information, please look at"
-msgstr ""
+msgstr "Mer information finns på"
 
 #: themes/default/templates/projects/importers/dropbox.html:18
 #: themes/default/templates/projects/importers/epicollect.html:14
@@ -2126,111 +2251,111 @@ msgstr ""
 #: themes/default/templates/projects/importers/s3.html:16
 #: themes/default/templates/projects/importers/twitter.html:29
 msgid "the documentation"
-msgstr ""
+msgstr "dokumentationen"
 
 #: themes/default/templates/projects/importers/dropbox.html:19
 msgid "You are about to import"
-msgstr ""
+msgstr "Du håller på att importera"
 
 #: themes/default/templates/projects/importers/dropbox.html:19
 msgid "files"
-msgstr ""
+msgstr "filer"
 
 #: themes/default/templates/projects/importers/epicollect.html:10
 msgid "From an EpiCollect Plus project"
-msgstr ""
+msgstr "Från ett EpiCollect Plus-projekt"
 
 #: themes/default/templates/projects/importers/epicollect.html:14
 msgid "Please provide an EpiCollect Plus project name to import its data for"
-msgstr ""
+msgstr "Ange ett EpiCollect Plus-projektnamn för att importera dess data"
 
 #: themes/default/templates/projects/importers/epicollect.html:15
 msgid "The name of the public EpiCollect Plus project"
-msgstr ""
+msgstr "Namnet på det offentliga EpiCollect Plus-projektet"
 
 #: themes/default/templates/projects/importers/epicollect.html:16
 msgid "The name of the project's form"
-msgstr ""
+msgstr "Namnet på projektets formulär"
 
 #: themes/default/templates/projects/importers/flickr.html:13
 msgid "From a Flickr Album"
-msgstr ""
+msgstr "Från ett Flickr-album"
 
 #: themes/default/templates/projects/importers/flickr.html:14
 msgid "Revoke access"
-msgstr ""
+msgstr "Återkalla åtkomst"
 
 #: themes/default/templates/projects/importers/flickr.html:17
 msgid "Grant access to your Flickr albums to select one..."
-msgstr ""
+msgstr "Ge åtkomst till dina Flickr-album för att välja ett..."
 
 #: themes/default/templates/projects/importers/flickr.html:18
 msgid "Log in Flickr"
-msgstr ""
+msgstr "Logga in Flickr"
 
 #: themes/default/templates/projects/importers/flickr.html:30
 msgid "Or manually provide the ID of a Flickr set with images for"
-msgstr ""
+msgstr "Eller manuellt ange ID för en Flickr-uppsättning med bilder"
 
 #: themes/default/templates/projects/importers/flickr.html:54
 msgid "Select one of your albums:"
-msgstr ""
+msgstr "Välj ett av dina album:"
 
 #: themes/default/templates/projects/importers/flickr.html:56
 msgid "photos"
-msgstr ""
+msgstr "foton"
 
 #: themes/default/templates/projects/importers/flickr.html:56
 msgid "Select"
-msgstr ""
+msgstr "Välj"
 
 #: themes/default/templates/projects/importers/gdocs.html:10
 msgid "From a Google Docs Spreadsheet"
-msgstr ""
+msgstr "Från ett Google Docs-kalkylark"
 
 #: themes/default/templates/projects/importers/gdocs.html:14
 msgid "Please provide a URL to a Google Drive Spreadsheet with data for"
-msgstr ""
+msgstr "Ange en URL till ett Google Drive-kalkylblad med data"
 
 #: themes/default/templates/projects/importers/gdocs.html:15
 msgid "The URL of the Google Docs Spreadsheet"
-msgstr ""
+msgstr "URL till Google Doc-kalkylarket"
 
 #: themes/default/templates/projects/importers/iiif.html:10
 msgid "From a IIIF manifest"
-msgstr ""
+msgstr "Från ett IIIF-manifest"
 
 #: themes/default/templates/projects/importers/localCSV.html:9
 msgid "From Local CSV Spreadsheet"
-msgstr ""
+msgstr "Från lokalt CSV-kalkylark"
 
 #: themes/default/templates/projects/importers/localCSV.html:13
 msgid "Please choose local csv file with data and press Import button."
-msgstr ""
+msgstr "Välj lokal csv-fil med data och tryck på Importera-knappen."
 
 #: themes/default/templates/projects/importers/s3.html:15
 msgid "From an Amazon S3 bucket"
-msgstr ""
+msgstr "Från en Amazon S3 bucket"
 
 #: themes/default/templates/projects/importers/s3.html:26
 msgid "Name of the S3 bucket"
-msgstr ""
+msgstr "Namn på S3 bucket"
 
 #: themes/default/templates/projects/importers/s3.html:28
 msgid "Search in bucket"
-msgstr ""
+msgstr "Bläddra i bucket"
 
 #: themes/default/templates/projects/importers/s3.html:84
 msgid "Oops... it seems that bucket is private."
-msgstr ""
+msgstr "Oj ... det verkar som att detta bucket är privat."
 
 #: themes/default/templates/projects/importers/s3.html:85
 msgid "Oops... we could not find that bucket."
-msgstr ""
+msgstr "Oj ... vi kunde inte hitta den där bucket"
 
 #: themes/default/templates/projects/importers/twitter.html:10
 msgid "From a Twitter hashtag or account"
-msgstr ""
+msgstr "Från en Twitter-hashtagg eller ett Twitter-kont"
 
 #: themes/default/templates/projects/importers/twitter.html:14
 msgid ""
@@ -2239,14 +2364,19 @@ msgid ""
 "allows to import the number of tweets returned by a single Twitter API "
 "call, which is 100 for searches and 200 for user timelines.)"
 msgstr ""
+"Du kan tillhandahålla dina egna Twitter-referenser och göra API-"
+"förfrågningar för dem, eller använda de referenser vi tillhandahåller. "
+"(Den senare tillåter endast import av antalet tweets som returneras "
+"tweets som returneras av enskilda Twitter API-samtal, vilket är 100 för "
+"sökningar och 200 för användartidslinjer.)"
 
 #: themes/default/templates/projects/importers/twitter.html:17
 msgid "I'll use my credentials"
-msgstr ""
+msgstr "Jag använder mina egna uppgifter"
 
 #: themes/default/templates/projects/importers/twitter.html:18
 msgid "I'll use credentials provided by the platform"
-msgstr ""
+msgstr "Jag använder referenser från plattformen"
 
 #: themes/default/templates/projects/importers/twitter.html:26
 msgid ""
@@ -2254,111 +2384,114 @@ msgid ""
 "regular \"word\" for search or a \"@user_account\" from where to import "
 "them"
 msgstr ""
+"Ange källan till dina tweets. Det kan vara en \"#hashtag\", en vanligt "
+"\"ord\" för sökning eller ett \"@användarkonto\"varifrån du kan importera"
+" dem\""
 
 #: themes/default/templates/projects/importers/twitter.html:31
 msgid "#hashtag or @user or something else"
-msgstr ""
+msgstr "#hashtag eller @user eller något annat"
 
 #: themes/default/templates/projects/importers/youtube.html:16
 msgid "From Youtube"
-msgstr ""
+msgstr "Från Youtube"
 
 #: themes/default/templates/projects/importers/youtube.html:18
 msgid "Please provide a URL to a Youtube playlist with videos for"
-msgstr ""
+msgstr "Ange en URL till en Youtube-spellista med videor för"
 
 #: themes/default/templates/projects/importers/youtube.html:27
 msgid "URL of a Youtube Playlist"
-msgstr ""
+msgstr "URL till en Youtube-spellista"
 
 #: themes/default/templates/projects/presenters/basic.html:2
 msgid "Basic"
-msgstr ""
+msgstr "Grundläggande"
 
 #: themes/default/templates/projects/presenters/basic.html:2
 msgid "The most basic template"
-msgstr ""
+msgstr "Den mest grundläggande mallen"
 
 #: themes/default/templates/projects/presenters/georef.html:2
 #: themes/default/templates/projects/tasks/gdocs-georef.html:2
 msgid "Georeferencing"
-msgstr ""
+msgstr "Georeferens"
 
 #: themes/default/templates/projects/presenters/georef.html:2
 msgid "Georeference with this template"
-msgstr ""
+msgstr "Georeferens med den här mallen"
 
 #: themes/default/templates/projects/presenters/image.html:2
 #: themes/default/templates/projects/tasks/gdocs-image.html:2
 msgid "Image Pattern Recognition"
-msgstr ""
+msgstr "Bildmönsterigenkänning"
 
 #: themes/default/templates/projects/presenters/image.html:2
 msgid "Analayze images using this template"
-msgstr ""
+msgstr "Analysera bilder med den här mallen"
 
 #: themes/default/templates/projects/presenters/map.html:2
 #: themes/default/templates/projects/tasks/gdocs-map.html:2
 msgid "Geo-coding"
-msgstr ""
+msgstr "Geo-koding"
 
 #: themes/default/templates/projects/presenters/map.html:2
 msgid "Analayze web maps with this template"
-msgstr ""
+msgstr "Analysera webbkartor med den här mallen"
 
 #: themes/default/templates/projects/presenters/pdf.html:2
 msgid "Transcribing documents"
-msgstr ""
+msgstr "Transkribera dokument"
 
 #: themes/default/templates/projects/presenters/pdf.html:2
 msgid "Re-use the PDF transcription template"
-msgstr ""
+msgstr "Återanvänd PDF-transkriptionsmallen"
 
 #: themes/default/templates/projects/presenters/sound.html:2
 #: themes/default/templates/projects/tasks/gdocs-sound.html:2
 msgid "Sound Pattern Recognition"
-msgstr ""
+msgstr "Ljudmönsterigenkänning"
 
 #: themes/default/templates/projects/presenters/sound.html:2
 msgid "Re-use the sound template"
-msgstr ""
+msgstr "Använd ljudmallen"
 
 #: themes/default/templates/projects/presenters/video.html:2
 #: themes/default/templates/projects/tasks/gdocs-video.html:2
 msgid "Video Pattern Recognition"
-msgstr ""
+msgstr "Videomönsterigenkänning"
 
 #: themes/default/templates/projects/presenters/video.html:2
 msgid "Re-use the video template"
-msgstr ""
+msgstr "Använd videomallen"
 
 #: themes/default/templates/projects/snippets/options.html:3
 msgid "Task Presenter Editor"
-msgstr ""
+msgstr "Task Presenter Editor"
 
 #: themes/default/templates/projects/snippets/options.html:5
 msgid "templates"
-msgstr ""
+msgstr "mallar"
 
 #: themes/default/templates/projects/snippets/options.html:5
 msgid "for your project"
-msgstr ""
+msgstr "för ditt projekt"
 
 #: themes/default/templates/projects/task/wrong.html:8
 msgid "Error!"
-msgstr ""
+msgstr "Fel!"
 
 #: themes/default/templates/projects/task/wrong.html:8
 msgid "This task does not belong to"
-msgstr ""
+msgstr "Denna uppgift tillhör inte"
 
 #: themes/default/templates/projects/task/wrong.html:9
 msgid "Try with another one"
-msgstr ""
+msgstr "Denna uppgift tillhör inte"
 
 #: themes/default/templates/projects/tasks/csv.html:2
 msgid "Provide a public link to your own CSV file"
-msgstr ""
+msgstr "Ge en offentlig länk till din egen CSV-fil"
 
 #: themes/default/templates/projects/tasks/csv.html:2
 #: themes/default/templates/projects/tasks/dropbox.html:2
@@ -2371,11 +2504,11 @@ msgstr ""
 #: themes/default/templates/projects/tasks/twitter.html:2
 #: themes/default/templates/projects/tasks/youtube.html:2
 msgid "Import data"
-msgstr ""
+msgstr "Importera data"
 
 #: themes/default/templates/projects/tasks/delete.html:4
 msgid "Delete all Tasks and Task Runs"
-msgstr ""
+msgstr "Ta bort alla uppgifter och uppgiftskörningar"
 
 #: themes/default/templates/projects/tasks/delete.html:9
 msgid ""
@@ -2383,202 +2516,277 @@ msgid ""
 "    tasks and task runs they will be gone\n"
 "    forever!"
 msgstr ""
+"Om du tar bort alla\n"
+"uppgifter och uppgiftskörningar kommer de att vara bora\n"
+"alltid!"
 
 #: themes/default/templates/projects/tasks/delete.html:11
 msgid "You cannot undo this action!"
-msgstr ""
+msgstr "Du kan inte ångra den här åtgärden!"
 
 #: themes/default/templates/projects/tasks/delete.html:15
 msgid ""
 "Are you sure you want to delete ALL the project tasks and associated task"
 " runs?"
 msgstr ""
+"Är du säker på att du vill ta bort ALLA projektuppgifter och tillhörande "
+"uppgiftskörningar?"
 
 #: themes/default/templates/projects/tasks/delete.html:21
 msgid ""
 "No, do not delete\n"
 "            anything!"
 msgstr ""
+"Nej, ta inte bort\n"
+"något som helst"
 
 #: themes/default/templates/projects/tasks/dropbox.html:2
 msgid "Dropbox"
-msgstr ""
+msgstr "Dropbox"
 
 #: themes/default/templates/projects/tasks/dropbox.html:2
 msgid "Use files from your Dropbox account"
-msgstr ""
+msgstr "Använd filer från ditt Dropbox-konto"
 
 #: themes/default/templates/projects/tasks/epicollect.html:2
 msgid "EpiCollect Plus Project"
-msgstr ""
+msgstr "EpiCollect Plus Projektet"
 
 #: themes/default/templates/projects/tasks/epicollect.html:2
 msgid "Use an EpiCollect Plus project"
-msgstr ""
+msgstr "Använd ett EpiCollect Plus Projektet"
 
 #: themes/default/templates/projects/tasks/flickr.html:2
 msgid "Flickr"
-msgstr ""
+msgstr "Flickr"
 
 #: themes/default/templates/projects/tasks/flickr.html:2
 msgid "Use images from a Flickr set"
-msgstr ""
+msgstr "Använd bilder från en Flickr-uppsättning"
 
 #: themes/default/templates/projects/tasks/gdocs-georef.html:2
 msgid "Re-use the Georefencing tasks"
-msgstr ""
+msgstr "Använd Georefens-uppgifterna"
 
 #: themes/default/templates/projects/tasks/gdocs-georef.html:2
 #: themes/default/templates/projects/tasks/gdocs-map.html:2
 msgid "Use the Mapping tasks"
-msgstr ""
+msgstr "Återanvänd Kartläggningsuppgifterna"
 
 #: themes/default/templates/projects/tasks/gdocs-image.html:2
 msgid "Re-use the Flickr Person Finder tasks"
-msgstr ""
+msgstr "Återanvänd Flickr Person Finder-uppgifterna"
 
 #: themes/default/templates/projects/tasks/gdocs-image.html:2
 msgid "Use the Image tasks"
-msgstr ""
+msgstr "Använd bilduppgifterna"
 
 #: themes/default/templates/projects/tasks/gdocs-map.html:2
 msgid "Re-use the Urban Park tasks"
-msgstr ""
+msgstr "Återanvänd Urban Park-uppgifterna"
 
 #: themes/default/templates/projects/tasks/gdocs-pdf.html:2
 msgid "Trascribing documents"
-msgstr ""
+msgstr "Transkribera dokument"
 
 #: themes/default/templates/projects/tasks/gdocs-pdf.html:2
 msgid "Re-use the PDF transcription tasks"
-msgstr ""
+msgstr "Återanvänd PDF-transkriptionsuppgifterna"
 
 #: themes/default/templates/projects/tasks/gdocs-pdf.html:2
 msgid "Use the Transcription tasks"
-msgstr ""
+msgstr "Använd transkriptionsuppgifterna"
 
 #: themes/default/templates/projects/tasks/gdocs-sound.html:2
 msgid "Re-use the SoundCloud tasks"
-msgstr ""
+msgstr "Återanvänd SoundCloud-uppgifterna"
 
 #: themes/default/templates/projects/tasks/gdocs-sound.html:2
 msgid "Use the Sound tasks"
-msgstr ""
+msgstr "Använd Ljuduppgifterna"
 
 #: themes/default/templates/projects/tasks/gdocs-video.html:2
 msgid "Re-use the Vimeo tasks"
-msgstr ""
+msgstr "Återanvänd Vimeo-uppgifterna"
 
 #: themes/default/templates/projects/tasks/gdocs-video.html:2
 msgid "Use the Video tasks"
-msgstr ""
+msgstr "Använd videouppgifterna"
 
 #: themes/default/templates/projects/tasks/gdocs.html:2
 msgid "Google Drive Spreadsheet"
-msgstr ""
+msgstr "Google Drive-kalkylblad"
 
 #: themes/default/templates/projects/tasks/gdocs.html:2
 msgid "Import a Google Drive Spreadsheet"
-msgstr ""
+msgstr "Importera ett Google Drive-kalkylark"
 
 #: themes/default/templates/projects/tasks/iiif.html:2
 msgid "IIIF"
-msgstr ""
+msgstr "IIIF"
 
 #: themes/default/templates/projects/tasks/iiif.html:2
 msgid "Import from a IIIF manifest"
-msgstr ""
+msgstr "Importera från ett IIIF-manifest"
 
 #: themes/default/templates/projects/tasks/localCSV.html:2
 msgid "Local Drive CSV Spreadsheet"
-msgstr ""
+msgstr "Local Drive CSV Spreadsheet"
 
 #: themes/default/templates/projects/tasks/localCSV.html:2
 msgid "Import a Local Drive CSV Spreadsheet"
-msgstr ""
+msgstr "Importera ett lokalt enhet CSV-kalkylark"
 
 #: themes/default/templates/projects/tasks/s3.html:2
 msgid "Amazon S3"
-msgstr ""
+msgstr "Amazon S3"
 
 #: themes/default/templates/projects/tasks/s3.html:2
 msgid "Use files from an Amazon S3 bucket"
-msgstr ""
+msgstr "Använd filer från en Amazon S3 bucket"
 
 #: themes/default/templates/projects/tasks/twitter.html:2
 msgid "Import tweets from a search or a user account"
-msgstr ""
+msgstr "Importera tweets från en sökning eller ett användarkonto"
 
 #: themes/default/templates/projects/tasks/youtube.html:2
 msgid "Youtube"
-msgstr ""
+msgstr "Youtube"
 
 #: themes/default/templates/projects/tasks/youtube.html:2
 msgid "Import Youtube Videos"
-msgstr ""
+msgstr "Importera Youtube-videor"
 
 #: themes/default/templates/stats/global.html:29
 msgid "General Statistics"
-msgstr ""
+msgstr "Allmän statistik"
 
 #: themes/default/templates/stats/global.html:33
 msgid "Number of Users"
-msgstr ""
+msgstr "Antal användare"
 
 #: themes/default/templates/stats/global.html:36
 msgid "Anonymous"
-msgstr ""
+msgstr "Anonym"
 
 #: themes/default/templates/stats/global.html:38
 msgid "Authenticated"
-msgstr ""
+msgstr "Autentiserad"
 
 #: themes/default/templates/stats/global.html:40
 #: themes/default/templates/stats/global.html:88
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
 #: themes/default/templates/stats/global.html:66
 msgid "Top 5 Users in the last 24 hours"
-msgstr ""
+msgstr "Topp 5-användare under det senaste dygnet"
 
 #: themes/default/templates/stats/global.html:69
 msgid "with"
-msgstr ""
+msgstr "med"
 
 #: themes/default/templates/stats/global.html:69
 msgid "contributed answers"
-msgstr ""
+msgstr "svar som bidrag"
 
 #: themes/default/templates/stats/global.html:114
 msgid "Top 5 projects in the last 24 hours"
-msgstr ""
+msgstr "Topp 5-projekt under det senaste dygnet"
 
 #: themes/default/templates/stats/global.html:130
 msgid "Tasks and Answers"
-msgstr ""
+msgstr "Uppgifter och Svar\""
 
 #: themes/default/templates/stats/global.html:133
 msgid "Number of Tasks"
-msgstr ""
+msgstr "Antal Uppgifter"
 
 #: themes/default/templates/stats/global.html:135
 msgid "Number of Task Runs"
-msgstr ""
+msgstr "Antal Uppgiftskörningar"
 
 #: themes/default/templates/stats/global.html:164
 msgid "Anonymous Volunteers"
-msgstr ""
+msgstr "Anonyma Volontärer"
 
 #: themes/default/templates/stats/index.html:15
 msgid "Community Leaderboard"
-msgstr ""
+msgstr "Community Leaderboard"
 
 #: themes/default/templates/stats/index.html:20
 msgid "Name"
-msgstr ""
+msgstr "Namn"
 
 #: themes/default/templates/stats/index.html:21
 msgid "Score"
-msgstr ""
+msgstr "Poäng"
 
+msgid "Featured"
+msgstr "Utvalda"
+
+msgid "Thinking"
+msgstr "Tänkande"
+
+msgid "Volunteer Sensing"
+msgstr "Volontäravkänning"
+
+msgid "More info"
+msgstr "Mer info"
+
+msgid "Short Name"
+msgstr "Kortnamn"
+
+msgid "Long Description"
+msgstr "Lång Beskrivning"
+
+msgid "Category"
+msgstr "Kategori"
+
+msgid "Allow Anonymous Contributors"
+msgstr "Tillåt anonyma bidragsgivare"
+
+msgid "Allow ZIP data download"
+msgstr "Tillåt nedladdning av ZIP-data"
+
+msgid "Protect with a password?"
+msgstr "Skydda med ett lösenord?"
+
+msgid "Change owner"
+msgstr "Byt ägare"
+
+msgid "Full name"
+msgstr "Fullständiga namn"
+
+msgid "Username"
+msgstr "Användarnamn"
+
+msgid "Email Address"
+msgstr "E-postadress"
+
+msgid "Get email notifications"
+msgstr "Få e-postaviseringar"
+
+msgid "Language"
+msgstr "Språk"
+
+msgid "CKAN API Key"
+msgstr "CKAN API-nyckel"
+
+msgid "Privacy Mode"
+msgstr "Sekretessläge"
+
+msgid "Restrict processing"
+msgstr "Begränsa behandlingen"
+
+msgid "Current password"
+msgstr "Nuvarande lösenord"
+
+msgid "New Password"
+msgstr "Nytt lösenord"
+
+msgid "Repeat password"
+msgstr "Repetera lösenord"
+
+msgid "Password"
+msgstr "Lösenord"
