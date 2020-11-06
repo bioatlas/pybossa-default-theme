@@ -1,15 +1,21 @@
-<section class="home featured">
-    <div class="jumbotron">
-        <div class="container text-center firstfold">
-            {% if featured | count > 0 %}
-            {% set featured_project = featured | random %}
-            <h1>{{ featured_project.name }}</h1>
-            <p>{{ featured_project.description }}</p>
-            <a class="btn btn-primary" href="{{ url_for('project.details', short_name=featured_project.short_name)}}">{{_('Contribute')}}</a>
-            {% else %}
-            <h1>{{_('CUSTOM Welcome to ')}} {{brand}}</h1>
-            <p>{{_("The ultimate crowdsourcing framework to analyze or enrich data that can't be processed by machines alone.")}}</p>
-            {% endif %}
+<div class="container">
+    <div class="col-md-offset-1 col-md-10">
+        <div class="row well jumbotron text-center">
+          <h1>{{ _("BioAtlas Citizen Science") }}</h1>
+        </div>
+        </br>
+        <div class="row well">
+            <div class="col-md-4">
+              <img src="{{url_for('static', filename="img/main_page.jpeg")}}" />
+            </div>
+            <div class="col-md-8">
+                <h3>{{ _('Help to georeference fungi from Uppland') }}</h3>
+                <br/>
+                <p class="text-justify">{{ _('Are you fascinated by fungi, or do you enjoy studying maps? Maybe you are interested in old place names in Uppland? Now you have the chance to get acquainted with our museum material and contribute important information.') }}</p>
+                <p class="text-justify">{{ _('The Museum of Evolution in Uppsala has a large number of collected fungi that lack coordinates for the place where they were collected. Some are collected by famous mycologists from the 19th century when Uppsala was another city, and some recently. Choose a fungal group or a geographical area and start helping us with the coordinate determination. Join us on a journey through time and space and find out where the fungi once grew! ') }}</p>
+                <p class="text-justify">{{ _('To get started: go to the heading Projects - select project - and go to More info - Contribute now.') }}</p>
+                <p class="text-justify">{{ _('Thank you for your participation!') }}</p>
+            </div>
         </div>
     </div>
-</section>
+</div>
