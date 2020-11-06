@@ -68,9 +68,9 @@
         <!-- <p>Locality: <span id="task-id" class="label label-info">#</span></p> -->
         <div class="row" >
             <div class="col-md-8">
-              <strong>Click on the circle button to draw an area on the map</strong>
+              <strong><span id="i18n_question">Click on the circle button to draw an area on the map</span></strong> <!-- The question will be loaded here -->
               <button class="btn btn-primary btn-sm pull-right" data-toggle="modal" data-target="#myModal">
-                  <i class="fa fa-book"></i> Help </button>
+                  <i class="fa fa-book"></i><span id="i18n_help">Help</span></button>
             </div>
         </div>
         <p>
@@ -78,10 +78,9 @@
             <div id="question" class="col-md-8">
                 <div id="map"></div>
                 <div>
-                    <p/> You have completed: <span id="done" class="label label-info">#</span> tasks from <span id="total" class="label label-info">#</span>
-                    </p>
+                    <p><span id="i18n_tasks_completed">You have completed:</span> <span id="done" class="label label-info"></span> <span id="i18n_tasks_from">tasks from</span> <span id="total" class="label label-info"></span></p>
                     <div class="progress progress-striped">
-                        <div id="progress" rel="tooltip" title="#" class="progress-bar" role="progressbar" style="width: 0%;"></div>
+                        <div id="progress" rel="tooltip" title="#" class="progress-bar" style="width: 0%;"></div>
                     </div>
                 </div>
             </div>
@@ -93,66 +92,65 @@
                             <input readonly="True" type="text" class="form-control form-control-sm" id="dugnad" value="" name="dugnad" />
                         </div>
                         <div class="form-group col-md-12">
-                            <label class="control-label" for=" scientificName">Vetenskapligt namn / Scientific
-                                name</label>
+                            <label class="control-label" for="scientificName"><span id="i18n_scientificName">Scientific name</span></label>
                             <input readonly="True" type="text" class="form-control form-control-sm" id="scientificName" value="" name="scientificName" />
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <label class="control-label" for="recordedBy">Insamlare / Collector</label>
+                            <label class="control-label" for="recordedBy"><span id="i18n_recordedBy">Collector</span></label>
                             <input readonly="True" type="text" class="form-control form-control-sm" id="recordedBy" value="" name="recordedBy" />
                         </div>
                         <div class="form-group col-md-3">
-                            <label class="control-label" for="recordNumber">Nummer / Number</label>
+                            <label class="control-label" for="recordNumber"><span id="i18n_recordNumber">Collectors number</span></label>
                             <input readonly="True" type="text" class="form-control form-control-sm" id="recordNumber" value="" name="recordNumber" />
                         </div>
                         <div class="form-group col-md-3">
-                            <label class="control-label" for="eventDate">Datum / Date</label>
+                            <label class="control-label" for="eventDate"><span id="i18n_eventDate"><span id="i18n_eventDate">Date</span></span></label>
                             <input readonly="True" type="text" class="form-control form-control-sm" id="eventDate" value="" name="eventDate" />
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <label class="control-label" for="katalognummer">Katalognummer / Catalog Number</label>
+                            <label class="control-label" for="katalognummer"><span id="i18n_katalognummer">Catalog Number</span></label>
                             <input readonly="True" type="text" class="form-control form-control-sm" id="katalognummer" value="" name="katalognummer" />
                         </div>
                         <div class="form-group col-md-6">
-                            <label class="control-label" for=" kollektID">Kollekt ID</label>
+                            <label class="control-label" for=" kollektID"><span id="i18n_kollektID">Kollekt ID</span></label>
                             <input readonly="True" type="text" class="form-control form-control-sm" id="kollektID" value="" name="kollektID" />
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <label class="control-label" for="stateProvince">Landskap / Province</label>
+                            <label class="control-label" for="stateProvince"><span id="i18n_stateProvince">Province</span></label>
                             <input readonly="True" type="text" class="form-control form-control-sm" id="stateProvince" value="" name="stateProvince" />
                         </div>
                         <div class="form-group col-md-6">
-                            <label class="control-label" for="county"> Socken / Parish</label>
+                            <label class="control-label" for="county"><span id="i18n_county">Parish</span></label>
                             <input readonly="True" type="text" class="form-control form-control-sm" id="county" value="" name="county" />
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label" for="locality"> Lokal / Locality</label>
-                        <input readonly="True" class="form-control form-control-sm" id="locality" name="locality" />
+                        <label class="control-label" for="locality"><span id="i18n_locality">Locality</span></label>
+                        <input readonly="True" type="textarea" class="form-control form-control-sm" id="locality" name="locality" />
                     </div>
                     <div class="form-group">
-                        <label class="control-label" for="habitat">Habitat / Habitat</label>
-                        <input readonly="True" type="text" class="form-control form-control-sm" id="habitat" name="habitat" />
+                        <label class="control-label" for="habitat"><span id="i18n_habitat">Habitat</span></label>
+                        <input readonly="True" type="textarea" class="form-control form-control-sm" id="habitat" name="habitat" />
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <label class="control-label" for="decimalLatitude">Latitud /Latitude</label>
+                            <label class="control-label" for="decimalLatitude"><span id="i18n_decimalLatitude">Latitude</span></label>
                             <input type="text" class="form-control form-control-sm" id="decimalLatitude" name="decimalLatitude" />
                         </div>
                         <div class="form-group col-md-6">
-                            <label class="control-label" for="decimalLongitude">Longitud / Longitude</label>
+                            <label class="control-label" for="decimalLongitude"><span id="i18n_decimalLongitude">Longitude</span></label>
                             <input type="text" class="form-control form-control-sm" id="decimalLongitude" name="decimalLongitude" />
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <label class="control-label" for="coordinateUncertaintyInMeters">Osäkerhet / Uncertainity (m)</label>
+                            <label class="control-label" for="coordinateUncertaintyInMeters"><span id="i18n_coordinateUncertaintyInMeters">Uncertainity in meters(m)</span></label>
                             <input type="text" class="form-control form-control-sm" id="coordinateUncertaintyInMeters" name="coordinateUncertaintyInMeters" />
                         </div>
                         <div class="form-group col-md-6" style="display:none">
@@ -165,10 +163,10 @@
                 </form>
                 <div class="row">
                     <div class="col-md-6">
-                        <button id="skipbtn" class="btn btn btn-primary" data-toggle="modal" data-target="#skipModal">Skip</button>
+                        <button id="skipbtn" class="btn btn btn-primary" data-toggle="modal" data-target="#skipModal"><span id="i18n_skip">Skip</span></button>
                     </div>
                     <div class="col-md-6">
-                        <button id="answerbtn" class="btn btn-primary btn-success btn-submit btn-block">Save</button>
+                        <button id="answerbtn" class="btn btn-primary btn-success btn-submit btn-block"><span id="i18n_save">Save</span></button>
                     </div>
                 </div>
             </div>
@@ -182,54 +180,60 @@
         <div class="modal-content">
             <!-- Modal header -->
             <div class="modal-header">
-                <h3>How to georeference ?</h3>
+                <h3><span id="i18n_help_heading">How to georeference a specimen record ?</span></h3>
             </div>
 
             <!-- Step 1 of the tutorial -->
             <div id="0" class="modal-body" style="display:none">
-                <p>
-                    Georeferencing is done by drawing a circle on the map to obtain the coordinates and the uncertainty of the corordinate in meters.
-                    The fields to consider while georeferencing are:
-                </p>
-                <ul>
-                  <li>Landskap / Province</li>
-                  <li>Socken / Parish</li>
-                  <li>Lokal / Locality</li>
-                  <li>Habitat / Habitat</li>
-                </ul>
-                <p>An example can be seen below.</p>
-                <img src="/static/img/georef/location-info.png" />
+                <h4><span id="i18n_help_step_1">Step :1</span><h4>
+                <p><span id="i18n_help_step_1_text">Find out where the place is using the information (<strong>landscape, parish, location</strong> and <strong>habitat</strong>) found in the gray fields.</span></p>
+                <img src="/static/img/georef/help-step-1-1.png" />
             </div>
 
             <!-- Step 2 of the tutorial -->
             <div id="1" class="modal-body" style="display:none">
-                <p>
-                    Use the toolbar on the left-top corner of the map to manipulate the map and geoference as shown in the figure.
-                </p>
-                <img src="/static/img/georef/georef.png" />
+                <h4><span id="i18n_help_step_2">Step :2</span><h4>
+                <p><span id="i18n_help_step_2_text_0">Use the tools in the upper left corner of the map to mark the correct location or area on the map.</span></p>
+                <p><span id="i18n_help_step_2_text_1">The area on the map is marked with a circle, select the <strong>black circle</strong>.</span></p>
+
+                <div class="row">
+                   <div class="col-md-6">
+                     <p><span id="i18n_help_step_2_text_2">The circle can be moved and resized with the <strong>pen symbol</strong> (place the mouse cursor on the white squares of the circle and drag).</span></p>
+                   </div>
+                   <div class="col-md-6">
+                      <p><span id="i18n_help_step_2_text_3">The coordinates and their uncertainty are automatically filled in the respective white fields. </br>If an error occurs, the selection can be removed by selecting the dustbin.</span></p>
+                   </div>
+                </div>
+                <div class="row">
+                   <div class="col-md-6">
+                      <img src="/static/img/georef/help-step-2-2.png" />
+                   </div>
+                   <div class="col-md-6">
+                      <img src="/static/img/georef/help-step-2-3.png" />
+                   </div>
+                </div>
             </div>
 
+            <!-- Step 3 of the tutorial -->
             <div id="2" class="modal-body" style="display:none">
+                <h4><span id="i18n_help_step_3">Step :3</span><h4>
+                <p><span id="i18n_help_step_3_text">Check that the <strong>latitude, longitude</strong> and <strong>uncertainty</strong> fields are filled in. </br>Press <strong>Save</strong> to save and move on to the next.</span></p>
+                <img src="/static/img/georef/help-step-3-1.png" />
+            </div>
 
-                <p>The following fields should be filled and checked before submission.</p>
-                <ul>
-                    <li>Latitud /Latitude</li>
-                    <li>Longitud / Longitude</li>
-                    <li>Osäkerhet / Uncertainity (m)</li>
-                </ul>
-                <p>An example can be seen below.</p>
-
-                <img src="/static/img/georef/result.png" />
-
+            <!-- Step 4 of the tutorial -->
+            <div id="3" class="modal-body" style="display:none">
+                <h4><span id="i18n_help_step_4">Step :4</span><h4>
+                <p><span id="i18n_help_step_4_text">You can skip a collection if the task is too difficult. </br>Press <strong>Skip</strong> and select from the following options: </br></br><strong>Incomplete location</strong> = if location information is missing, or is too vague </br><strong>Ambiguous location</strong> = if there are several locations in Uppland with the same name </br><strong>Other reasons</strong> = eg if you can not find the place.</span></p>
+                <img src="/static/img/georef/help-step-4-1.png" />
             </div>
 
             <!-- End of stepped modal body -->
-
             <!-- Modal footer -->
             <div class="modal-footer">
-                <a id="prevBtn" href="#" onclick="showStep('prev')" class="btn btn-primary btn-default">Previous</a>
-                <a id="nextBtn" href="#" onclick="showStep('next')" class="btn btn-primary btn-success">Next</a>
-                <button id="closeBtn" data-dismiss="modal" onclick="showStep('finish')" class="btn btn-primary" style="display:none">Back to task</button>
+                <a id="prevBtn" href="#" onclick="showStep('prev')" class="btn btn-primary btn-default"><span id="i18n_previous">Previous</span></a>
+                <a id="nextBtn" href="#" onclick="showStep('next')" class="btn btn-primary btn-success"><span id="i18n_next">Next</span></a>
+                <button id="closeBtn" data-dismiss="modal" onclick="showStep('finish')" class="btn btn-primary" style="display:none"><span id="i18n_back">Back to task</span></button>
             </div>
         </div>
     </div>
@@ -240,19 +244,19 @@
         <div class="modal-content">
             <!-- Modal header -->
             <div class="modal-header">
-                <h3>Please select a reason to skip</h3>
+                <h3><span id="i18n_skipSelectText">Select your reason for skipping the task</span></h3>
             </div>
             <div class="modal-body">
               <select name="skipReasons" id="skipReasons">
-                <option value="incomplete_location">Incomplete Location</option>
-                <option value="ambiguous">Ambiguous Location</option>
-                <option value="others">Others</option>
+                <option id="i18n_incomplete_location" value="incomplete_location"></option>
+                <option id="i18n_ambiguous" value="ambiguous_location"></option>
+                <option id="i18n_others" value="others"></option>
               </select>
             </div>
             <!-- Modal footer -->
             <div class="modal-footer">
-                <button id="skipCancelBtn" data-dismiss="modal" onclick="cancelSkip()" class="btn btn-primary">Cancel</button>
-                <button id="skipOKBtn" data-dismiss="modal" onclick="okSkip()" class="btn btn-primary btn-success btn-submit">Skip</button>
+                <button id="skipCancelBtn" data-dismiss="modal" onclick="cancelSkip()" class="btn btn-primary"><span id="i18n_cancel">Cancel</span></button>
+                <button id="skipOKBtn" data-dismiss="modal" onclick="okSkip()" class="btn btn-primary btn-success btn-submit"><span id="i18n_skipconfirm">Skip</span></button>
             </div>
         </div>
     </div>
@@ -288,7 +292,7 @@
         // this line below needs to match the id of the last modal div. If you have 4 divs, you need to
         // change this to step = 3 and if you have 2 you would say step = 1. Id starts at 0.
 
-        if (step == 2) {
+        if (step == 3) {
             $("#nextBtn").hide();
             $("#closeBtn").show();
         }
@@ -318,14 +322,119 @@
 <script type="text/javascript">
     var MAP_VAR = {};
     (function() {
+        // Default language
+        var userLocale = "en";
+        // Translations
+        var messages = {"en": {
+                                "i18n_working_task": "You are working now on task:",
+                                "i18n_tasks_completed": "You have completed:",
+                                "i18n_tasks_from": "tasks from",
+                                "i18n_question": "Click on the circle button to draw an area on the map",
+                                "i18n_help": "Help",
+                                "i18n_skip": "Skip",
+                                "i18n_save": "Save",
+                                "i18n_next": "Next",
+                                "i18n_previous": "Previous",
+                                "i18n_back": "Back to task",
+                                "i18n_cancel": "Cancel",
+                                "i18n_skipconfirm": "Skip",
+                                "i18n_scientificName": "Scientific name",
+                                "i18n_recordedBy": "Collector",
+                                "i18n_recordNumber": "Collectors number",
+                                "i18n_eventDate": "Date",
+                                "i18n_katalognummer": "Catalog Number",
+                                "i18n_kollektID": "Kollekt ID",
+                                "i18n_stateProvince": "Province",
+                                "i18n_county": "Parish",
+                                "i18n_locality": "Locality",
+                                "i18n_habitat": "Habitat",
+                                "i18n_decimalLatitude": "Latitude",
+                                "i18n_decimalLongitude": "Longitude",
+                                "i18n_coordinateUncertaintyInMeters": "Uncertainity in meters(m)",
+                                "i18n_skipSelectText": "Select your reason for skipping the task",
+                                "i18n_incomplete_location": "Incomplete location",
+                                "i18n_ambiguous": "Ambiguous location",
+                                "i18n_others": "Other reasons",
+                                "i18n_help_heading": "How to georeference a specimen record ?",
+                                "i18n_help_step_1": "Step :1",
+                                "i18n_help_step_2": "Step :2",
+                                "i18n_help_step_3": "Step :3",
+                                "i18n_help_step_4": "Step :4",
+                                "i18n_help_step_1_text": "Find out where the place is using the information (<strong>landscape, parish, location</strong> and <strong>habitat</strong>) found in the gray fields.",
+                                "i18n_help_step_2_text_0": "Use the tools in the upper left corner of the map to mark the correct location or area on the map.",
+                                "i18n_help_step_2_text_1": "The area on the map is marked with a circle, select the <strong>black circle</strong>.",
+                                "i18n_help_step_2_text_2": "The circle can be moved and resized with the <strong>pen symbol</strong> (place the mouse cursor on the white squares of the circle and drag).",
+                                "i18n_help_step_2_text_3": "The coordinates and their uncertainty are automatically filled in the respective white fields. </br>If an error occurs, the selection can be removed by selecting the dustbin.",
+                                "i18n_help_step_3_text": "Check that the <strong>latitude, longitude</strong> and <strong>uncertainity</strong> fields are filled in. </br>Press <strong>Save</strong> to save and move on to the next.",
+                                "i18n_help_step_4_text": "You can skip a collection if the task is too difficult. </br>Press <strong>Skip</strong> and select from the following options: </br></br><strong>Incomplete location</strong> = if location information is missing, or is too vague </br><strong>Ambiguous location</strong> = if there are several locations in Uppland with the same name </br><strong>Other reasons</strong> = eg if you can not find the place."
+                              },
+                        "sv": {
+                                "i18n_tasks_completed": "Du har slutfört :",
+                                "i18n_tasks_from": "uppgifter från",
+                                "i18n_question": "Välj den svarta pricken för att markera en cirkel på kartan",
+                                "i18n_help": "Hjälp",
+                                "i18n_skip": "Höppa över",
+                                "i18n_save": "Spara",
+                                "i18n_next": "Nästa",
+                                "i18n_previous": "Föregående",
+                                "i18n_back": "Återgå till uppgift",
+                                "i18n_cancel": "Avbryt",
+                                "i18n_skipconfirm": "Höppa över",
+                                "i18n_scientificName": "Vetenskapligt namn",
+                                "i18n_recordedBy": "Insamlare",
+                                "i18n_recordNumber": "Insamlingsnummer",
+                                "i18n_eventDate": "Insamlingsdatum",
+                                "i18n_katalognummer": "Katalognummer",
+                                "i18n_kollektID": "Kollekt ID",
+                                "i18n_stateProvince": "Landskap",
+                                "i18n_county": "Socken",
+                                "i18n_locality": "Lokal",
+                                "i18n_habitat": "Habitat",
+                                "i18n_decimalLatitude": "Latitud",
+                                "i18n_decimalLongitude": "Longitud",
+                                "i18n_coordinateUncertaintyInMeters": "Osäkerhet i meter(m)",
+                                "i18n_skipSelectText": "Välj din anledning till att hoppa över uppgiften",
+                                "i18n_incomplete_location": "Ofullständig lokalangivelse",
+                                "i18n_ambiguous": "Tvetydig lokalangivelse",
+                                "i18n_others": "Annan orsak",
+                                "i18n_help_heading": "Hur du koordinatbestämmer en kollekt ?",
+                                "i18n_help_step_1": "Steg :1",
+                                "i18n_help_step_2": "Steg :2",
+                                "i18n_help_step_3": "Steg :3",
+                                "i18n_help_step_4": "Steg :4",
+                                "i18n_help_step_1_text": "Ta reda på var platsen ligger med hjälp av informationen (<strong>landskap, socken, lokal</strong> och <strong>habitat</strong>) som finns i de grå fälten.",
+                                "i18n_help_step_2_text_0": "Använd verktygen i kartans övre vänstra hörn för att markera rätt plats eller område på kartan.",
+                                "i18n_help_step_2_text_1": "Området på kartan markeras med en cirkel, välj den <strong>svarta pricken</strong>.",
+                                "i18n_help_step_2_text_2": "</br>Cirkeln kan flyttas och ändra storlek med <strong>penn-symbolen</strong> (placera musens markör på cirkelns vita kvadrater och dra).",
+                                "i18n_help_step_2_text_3": "</br>Koordinaterna samt deras osäkerhet fylls automatiskt i respektive vita fält. </br>Om det blir fel kan markeringen tas bort genom att välja <strong>soptunnan</strong>.",
+                                "i18n_help_step_3_text": "Kontrollera att fält för latitud, longitud och osäkerhet är ifyllda. </br>Tryck på <strong>Spara</strong> om du vill spara och gå vidare till nästa.",
+                                "i18n_help_step_4_text": "Du kan hoppa över en kollekt om uppgiften är för svår. </br>Tryck på <strong>Hoppa över</strong> och välj bland följande alternativ: </br></br><strong>Ofullständig lokalangivelse</strong> = om lokaluppgifter saknas, eller är alltför vaga </br><strong>Tvetydig lokalangivelse</strong> = om det finns flera lokaler i Uppland med samma namn </br><strong>Annan orsak</strong> = tex om du inte hittar platsen"
+                              }
+                       };
+        // Update userLocale with server side information
+         $(document).ready(function(){
+             userLocale = document.getElementById('PYBOSSA_USER_LOCALE').textContent.trim();
+
+        });
+
+        function i18n_translate() {
+            var ids = Object.keys(messages[userLocale])
+            for (i=0; i<ids.length; i++) {
+                console.log("Translating: " + ids[i]);
+                if (document.getElementById(ids[i])) {
+                    document.getElementById(ids[i]).innerHTML = messages[userLocale][ids[i]];
+                }
+            }
+        }
+
         function loadUserProgress() {
             pybossa.userProgress('{{project.short_name}}').done(function(data) {
+                $("#total").text(data.total);
+                $("#done").text(data.done);
                 var pct = Math.round((data.done * 100) / data.total);
                 $("#progress").css("width", pct.toString() + "%");
                 $("#progress").attr("title", pct.toString() + "% completed!");
-                $("#progress").tooltip({ 'placement': 'left' });
-                $("#total").text(data.total);
-                $("#done").text(data.done);
+                //$("#progress").tooltip({ 'placement': 'left' });
             });
         }
 
@@ -340,6 +449,7 @@
 
         pybossa.presentTask(function(task, deferred) {
             if (!$.isEmptyObject(task)) {
+                i18n_translate();
                 if (task.state == 'completed') {
                     pybossaNotify("This task has been completed.", true, "info");
                 }
@@ -492,13 +602,13 @@
                             deferred.resolve();
                             //console.log(answer);
                        }else {
-                            alert("Georefencing incomplete ! Please Georeference or Skip !")
+                            alert("Ofullständig uppgift! Vänligen georeferens eller hoppa över!")
                        }
                     }
                 });
             } else {
                 $(".skeleton").hide();
-                pybossaNotify("Thanks! You have participated in all available tasks. Enjoy some of your time!", true, "info");
+                pybossaNotify("Tack! Du har deltagit i alla tillgängliga uppgifter.", true, "info");
             }
         });
 
