@@ -48,7 +48,7 @@
             {% endif %}
 
             <section class="account update external-services">
-                <h2>External Services</h2>
+                <h2>{{ _('External Services') }}</h2>
                 <form method="post" action="{{ url_for('account.update_profile', name=current_user.name) }}">
                     <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
                     {{ render_field(form.ckan_api) }}
@@ -82,7 +82,7 @@
                     <strong>{{ _('Danger Zone!') }}</strong> {{ _('By deleting your account, all your personal data will be removed from the server and third party services. Your contributions will be anonymized. This operation cannot be undone!') }}
                 </div>
                 <div class="form-group">
-                    <input onkeyup="checkEmail(this.value)" class="form-control" id="delete" placeholder="Type your email to confirm that you want to delete it.">
+                    <input onkeyup="checkEmail(this.value)" class="form-control" id="delete" placeholder="{{_('Type your email to confirm that you want to delete it.')}}">
                     <a id="deleteTrue"  class="btn btn-primary" style="margin-top:10px; display:none;" href="{{url_for('account.delete', name=current_user.name)}}">{{_('Delete')}}</a>
                 </div>
             </section>
