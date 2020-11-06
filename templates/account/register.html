@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-md-offset-2 col-md-8">
                 <h1>{{ _('Create an account') }}</h1>
-
+<!--
                 <div id="ageCheck" class="form-inline">
                     <div class="form-group">
                         <p>{{_('To create an account you must be 16+ years old. Please enter your date of birth')}}</p>
@@ -15,17 +15,17 @@
                         <input class="form-control" id="month" placeholder="MM">
                         <input class="form-control" id="year" placeholder="YYYY">
                     </div>
-                    <button onclick="checkAge()" style="margin-top:15px;" class="btn btn-primary">Check age</button>
+                    <button onclick="checkAge()" style="margin-top:15px;" class="btn btn-primary">{{ _('Check age') }}</button>
                 </div>
-
+-->
                 {{ render_form(form, form_id="register", action_url=url_for('account.register'), btn_class="btn btn-primary btn-block" )}}
 
                 <p class="text-center text-sm" style="margin-top:5px;">
-                <span class="label label-warning"><i class="fa fa-bullhorn"></i> {{ _('Note') }}</span> 
-                {{ _('By click the') }} 
+                <span class="label label-warning"><i class="fa fa-bullhorn"></i> {{ _('Note') }}</span>
+                {{ _('By clicking the') }}
                 <strong>{{ _('Create account button') }}
                 </strong>{{ _('below you are agreeing to the') }}
-                <a target="blank" href={{terms_of_use | safe}}>{{ _('terms of use') }} </a>{{ _('and') }} 
+                <a target="blank" href={{terms_of_use | safe}}>{{ _('terms of use') }} </a>{{ _('and') }}
                 <a href={{data_use | safe}}>{{ _('data') }}</a>.
                 </p>
             </div>
@@ -89,9 +89,11 @@ function checkAge () {
     }
 }
 </script>
+<!--
 <style>
 #register {
     display: none;
 }
 </style>
+-->
 {% endblock %}
