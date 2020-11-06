@@ -153,23 +153,23 @@ L.drawLocal = {
 		toolbar: {
 			actions: {
 				save: {
-					title: 'Save changes',
-					text: 'Save'
+					title: 'Confirm',
+					text: 'Confirm'
 				},
 				cancel: {
 					title: 'Cancel editing, discards all changes',
 					text: 'Cancel'
 				},
 				clearAll: {
-					title: 'Clear all layers',
-					text: 'Clear All'
+					title: 'Clear circle',
+					text: 'Clear'
 				}
 			},
 			buttons: {
-				edit: 'Edit layers',
-				editDisabled: 'No layers to edit',
-				remove: 'Delete layers',
-				removeDisabled: 'No layers to delete'
+				edit: 'Edit circle',
+				editDisabled: 'No circle to edit',
+				remove: 'Delete circle',
+				removeDisabled: 'No circle to delete'
 			}
 		},
 		handlers: {
@@ -181,7 +181,7 @@ L.drawLocal = {
 			},
 			remove: {
 				tooltip: {
-					text: 'Click on a feature to remove.'
+					text: 'Click on a circle to remove.'
 				}
 			}
 		}
