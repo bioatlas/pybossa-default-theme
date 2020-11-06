@@ -4,9 +4,9 @@
 {% block rightbody %}
 <div class="container">
     <div class="col-sm-8 col-md-8">
-        <h1>Announcements</h1>
+        <h1>{{ _('Announcements') }}</h1>
         <div style="margin-bottom: 15px;">
-        <a class="btn btn-warning" href="{{url_for('admin.new_announcement')}}">Create a new Announcement</a>
+        <a class="btn btn-warning" href="{{url_for('admin.new_announcement')}}">{{ _('Create a new Announcement') }}</a>
         </div>
 
         {% if announcements %}
@@ -22,7 +22,7 @@
                     <div class="caption">
                         <h3>{{announcement.title}}</h3>
                         {% if announcement.published == False %}
-                        <span class="label label-info">DRAFT</span>
+                        <span class="label label-info">{{ _('DRAFT') }}</span>
                         {% endif %}
                         <p>{{announcement.body | markdown | truncate(200)}}</p>
                         <div class="row">

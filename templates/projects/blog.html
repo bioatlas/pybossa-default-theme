@@ -5,7 +5,7 @@
 
 {% block projectcontent %}
         <div style="margin-bottom: 15px;">
-        <a class="btn btn-warning" href="{{url_for('project.new_blogpost', short_name=project.short_name)}}">Create a new blog post</a>
+        <a class="btn btn-warning" href="{{url_for('project.new_blogpost', short_name=project.short_name)}}">{{_('Create a new blog post') }}</a>
         </div>
 
         {% if blogposts %}
