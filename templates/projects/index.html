@@ -27,8 +27,10 @@
                 {% set title = _('Draft Projects') %}
                 {% set subheading = _('Work in progress projects') %}
             {% else %}
-                {% set title = active_cat.name + ' ' + _('Projects') %}
-                {% set subheading = active_cat.description %}
+            <!-- {% set title = active_cat.name + ' ' + _('Projects') %}
+                {% set subheading = active_cat.description %} -->
+                {% set title = '' %}
+                {% set subheading = '' %}
             {% endif %}
             <div class="row">
                 <div class="col-md-offset-1 col-md-10">
