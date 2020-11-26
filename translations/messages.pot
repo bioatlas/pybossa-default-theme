@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-11-06 00:21+0100\n"
+"POT-Creation-Date: 2020-11-26 22:17+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: themes/default/templates/_navbar.html:7
 msgid "Menu"
@@ -844,29 +844,41 @@ msgstr ""
 
 #: themes/default/templates/custom/_about.html:15
 msgid ""
-"This is what a specimen can look like in our collections. A fungal "
-"parasite on leaves collected by A.G. Eliasson at Grindstugan in Uppsala "
-"in 1895. Today it is not as easy to find the place for the Grindstugan "
-"inn, since the building was demolished 50 years ago and the Rosendal "
-"district has now grown up."
+"A fungal parasite on leaves collected 1895 by A.G. Eliasson at "
+"Grindstugan, Uppsala. Today it is not as easy to find the place, since "
+"the building was demolished 50 years ago and the Rosendal district has "
+"now grown up."
 msgstr ""
 
-#: themes/default/templates/custom/_about.html:20
+#: themes/default/templates/custom/_about.html:21
+msgid ""
+"A false truffle (Hysterangium) collected 1888 in the woods of Graneberg, "
+"Uppsala, by Elias, Robert and Hjalmar Fries."
+msgstr ""
+
+#: themes/default/templates/custom/_about.html:26
 msgid "Who we are :"
 msgstr ""
 
-#: themes/default/templates/custom/_about.html:27
+#: themes/default/templates/custom/_about.html:33
 msgid ""
 "I am a museum technician and responsible for the Museum of Evolution´s "
 "databases. In addition, I take care of our lending activities and send "
 "museum objects to researchers all over the world."
 msgstr ""
 
-#: themes/default/templates/custom/_about.html:36
+#: themes/default/templates/custom/_about.html:43
 msgid ""
 "I am a curator and responsible for the Museum of Evolution´s collections "
 "of fungi. The fungal collections consist of about 360,000 specimens, of "
 "which almost half are digitized and available from our database."
+msgstr ""
+
+#: themes/default/templates/custom/_about.html:50
+msgid ""
+"If you want to follow what is happening in BioAtlas citizen science, ask "
+"questions or come in contact with other volunteers\n"
+"              - join us on Facebook"
 msgstr ""
 
 #: themes/default/templates/custom/_index.html:12
@@ -1421,7 +1433,7 @@ msgstr ""
 msgid "Work in progress projects"
 msgstr ""
 
-#: themes/default/templates/projects/index.html:44
+#: themes/default/templates/projects/index.html:46
 msgid "Sorry, there are no published projects for this category yet"
 msgstr ""
 
@@ -2582,3 +2594,75 @@ msgstr ""
 msgid "Score"
 msgstr ""
 
+
+msgid "Featured"
+msgstr ""
+
+msgid "Thinking"
+msgstr ""
+
+msgid "Volunteer Sensing"
+msgstr ""
+
+msgid "Fungal projects"
+msgstr ""
+
+msgid "Geographical projects"
+msgstr ""
+
+msgid "More info"
+msgstr ""
+
+msgid "Short Name"
+msgstr ""
+
+msgid "Long Description"
+msgstr ""
+
+msgid "Category"
+msgstr ""
+
+msgid "Allow Anonymous Contributors"
+msgstr ""
+
+msgid "Allow ZIP data download"
+msgstr ""
+
+msgid "Protect with a password?"
+msgstr ""
+
+msgid "Full name"
+msgstr ""
+
+msgid "Username"
+msgstr ""
+
+msgid "Email Address"
+msgstr ""
+
+msgid "Get email notifications"
+msgstr ""
+
+msgid "Language"
+msgstr ""
+
+msgid "CKAN API Key"
+msgstr ""
+
+msgid "Privacy Mode"
+msgstr ""
+
+msgid "Restrict processing"
+msgstr ""
+
+msgid "Current password"
+msgstr ""
+
+msgid "New Password"
+msgstr ""
+
+msgid "Repeat password"
+msgstr ""
+
+msgid "Password"
+msgstr ""

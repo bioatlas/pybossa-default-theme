@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-11-06 00:21+0100\n"
+"POT-Creation-Date: 2020-11-26 22:17+0100\n"
 "PO-Revision-Date: 2020-10-28 18:20+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: sv\n"
@@ -16,7 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: themes/default/templates/_navbar.html:7
 msgid "Menu"
@@ -48,17 +48,17 @@ msgstr "Om"
 
 #: themes/default/templates/_navbar.html:24
 msgid "My Profile"
-msgstr "Min Profil"
+msgstr "Din Profil"
 
 #: themes/default/templates/_navbar.html:25
 #: themes/default/templates/account/_helpers.html:7
 msgid "My Projects"
-msgstr "Mina Projekt"
+msgstr "Dina projekt"
 
 #: themes/default/templates/_navbar.html:26
 #: themes/default/templates/account/_helpers.html:11
 msgid "My Settings"
-msgstr "Mina Inställningar"
+msgstr "Dina inställningar"
 
 #: themes/default/templates/_navbar.html:29
 #: themes/default/templates/account/_helpers.html:9
@@ -69,7 +69,7 @@ msgstr "Mina Inställningar"
 #: themes/default/templates/admin/update_category.html:5
 #: themes/default/templates/admin/users.html:6
 msgid "Admin Site"
-msgstr "Admin Hemsida"
+msgstr "Admin"
 
 #: themes/default/templates/_navbar.html:32
 msgid "Sign Out"
@@ -83,7 +83,7 @@ msgstr "Logga In"
 
 #: themes/default/templates/account/_helpers.html:6
 msgid "My Account"
-msgstr "Mina Konto"
+msgstr "Din profil"
 
 #: themes/default/templates/account/_helpers.html:17
 msgid "I've done"
@@ -103,7 +103,7 @@ msgstr "Tweet"
 
 #: themes/default/templates/account/_helpers.html:37
 msgid "Nick"
-msgstr "Nick"
+msgstr "Användarnamn"
 
 #: themes/default/templates/account/_helpers.html:39
 msgid "E-mail"
@@ -114,7 +114,7 @@ msgstr "E-post"
 #: themes/default/templates/account/public_profile.html:22
 #: themes/default/templates/stats/index.html:19
 msgid "Rank"
-msgstr "Räng"
+msgstr "Rang"
 
 #: themes/default/templates/account/_helpers.html:56
 #: themes/default/templates/projects/tasks_browse.html:29
@@ -259,16 +259,16 @@ msgstr "mitt nya lösenord igen"
 
 #: themes/default/templates/account/profile.html:16
 msgid "Your Account"
-msgstr "Ditt Konto"
+msgstr "Din profil"
 
 #: themes/default/templates/account/profile.html:24
 msgid "Your Contributions"
-msgstr "Dina Bidrag"
+msgstr "Dina bidrag"
 
 #: themes/default/templates/account/projects.html:16
 #: themes/default/templates/stats/global.html:84
 msgid "Published Projects"
-msgstr "Publicerad Projekt"
+msgstr "Publicerade projekt"
 
 #: themes/default/templates/account/projects.html:19
 #: themes/default/templates/projects/index.html:27
@@ -420,7 +420,7 @@ msgid ""
 "have created"
 msgstr ""
 "Du får ett e-postmeddelande när data är tillgängliga för nedladdning. Du "
-"fårtillgång till dina personuppgifter, dina bidrag och de projekt duhar "
+"får tillgång till dina personuppgifter, dina bidrag och de projekt du har "
 "skapat"
 
 #: themes/default/templates/account/update.html:80
@@ -433,7 +433,7 @@ msgstr "Radera ditt konto"
 #: themes/default/templates/projects/tasks/delete.html:9
 #: themes/default/templates/projects/transferownership.html:12
 msgid "Danger Zone!"
-msgstr "Farozon!"
+msgstr "Varning!"
 
 #: themes/default/templates/account/update.html:82
 msgid ""
@@ -441,8 +441,8 @@ msgid ""
 " server and third party services. Your contributions will be anonymized. "
 "This operation cannot be undone!"
 msgstr ""
-"Genom att radera ditt konto kommer alla dina personuppgifter att tas bort"
-" från server och tredje parts tjänster. Dina bidrag kommer att "
+"Om din profil raderas kommer alla dina personuppgifter att tas bort"
+" från server och tredjepartstjänster. Dina bidrag kommer att "
 "anonymiseras. Denna åtgärd kan inte ångras!"
 
 #: themes/default/templates/account/update.html:85
@@ -880,22 +880,28 @@ msgstr ""
 
 #: themes/default/templates/custom/_about.html:15
 msgid ""
-"This is what a specimen can look like in our collections. A fungal "
-"parasite on leaves collected by A.G. Eliasson at Grindstugan in Uppsala "
-"in 1895. Today it is not as easy to find the place for the Grindstugan "
-"inn, since the building was demolished 50 years ago and the Rosendal "
-"district has now grown up."
+"A fungal parasite on leaves collected 1895 by A.G. Eliasson at "
+"Grindstugan, Uppsala. Today it is not as easy to find the place, since "
+"the building was demolished 50 years ago and the Rosendal district has "
+"now grown up."
 msgstr ""
-"Så här kan en kollekt se ut i våra samlingar. En svampparasit på blad som"
-" samlades in av A.G. Eliasson vid Grindstugan i Uppsala 1895. Idag är det"
-" inte lika enkelt att hitta platsen för grindstugans värdshus, då "
-"byggnaden revs för 50 år sedan och stadsdelen Rosendal nu vuxit upp."
+"En svampparasit på blad samlades in 1895 av A.G. Eliasson vid "
+"Grindstugan, Uppsala. Idag är det inte lika enkelt att hitta "
+"platsen då byggnaden revs för 50 år sedan och stadsdelen Rosendal nu vuxit upp."
 
-#: themes/default/templates/custom/_about.html:20
+#: themes/default/templates/custom/_about.html:21
+msgid ""
+"A false truffle (Hysterangium) collected 1888 in the woods of Graneberg, "
+"Uppsala, by Elias, Robert and Hjalmar Fries."
+msgstr ""
+"Brosktryffel (Hysterangium) insamlad 1888 i Granebergsskogen, Uppsala, "
+"av Elias, Robert och Hjalmar Fries."
+
+#: themes/default/templates/custom/_about.html:26
 msgid "Who we are :"
 msgstr "Vi som jobbar med detta projekt är :"
 
-#: themes/default/templates/custom/_about.html:27
+#: themes/default/templates/custom/_about.html:33
 msgid ""
 "I am a museum technician and responsible for the Museum of Evolution´s "
 "databases. In addition, I take care of our lending activities and send "
@@ -905,7 +911,7 @@ msgstr ""
 "Dessutom har jag hand om vår låneverksamhet och skickar museiföremål till"
 " forskare över hela världen."
 
-#: themes/default/templates/custom/_about.html:36
+#: themes/default/templates/custom/_about.html:43
 msgid ""
 "I am a curator and responsible for the Museum of Evolution´s collections "
 "of fungi. The fungal collections consist of about 360,000 specimens, of "
@@ -914,6 +920,16 @@ msgstr ""
 "Jag är intendent och ansvarig för Evolutionsmuseets svampsamlingar. "
 "Svampsamlingarna består av ca 360 000 kollekter, varav snart hälften är "
 "digitaliserade och synliga i vår databas."
+
+#: themes/default/templates/custom/_about.html:50
+msgid ""
+"If you want to follow what is happening in BioAtlas citizen science, ask "
+"questions or come in contact with other volunteers\n"
+"              - join us on Facebook"
+msgstr ""
+"Om du vill följa vad som händer inom Biotatlas Medborgarforskning, "
+"ställa frågor eller komma i kontakt med andra vovolontärer, "
+"              - gå med oss på Facebook"
 
 #: themes/default/templates/custom/_index.html:12
 msgid "Help to georeference fungi from Uppland"
@@ -1505,7 +1521,7 @@ msgstr "Ett speciellt urval av de mest intressanta projekten"
 msgid "Work in progress projects"
 msgstr "Pågående projekt"
 
-#: themes/default/templates/projects/index.html:44
+#: themes/default/templates/projects/index.html:46
 msgid "Sorry, there are no published projects for this category yet"
 msgstr "Det finns tyvärr inga publicerade projekt för denna kategori än"
 
@@ -2731,6 +2747,12 @@ msgstr "Tänkande"
 msgid "Volunteer Sensing"
 msgstr "Volontäravkänning"
 
+msgid "Fungal projects"
+msgstr "Svamp-projekt"
+
+msgid "Geographical projects"
+msgstr "Geografiska projekt"
+
 msgid "More info"
 msgstr "Mer info"
 
@@ -2752,11 +2774,8 @@ msgstr "Tillåt nedladdning av ZIP-data"
 msgid "Protect with a password?"
 msgstr "Skydda med ett lösenord?"
 
-msgid "Change owner"
-msgstr "Byt ägare"
-
 msgid "Full name"
-msgstr "Fullständiga namn"
+msgstr "Fullständigt namn"
 
 msgid "Username"
 msgstr "Användarnamn"
@@ -2786,7 +2805,7 @@ msgid "New Password"
 msgstr "Nytt lösenord"
 
 msgid "Repeat password"
-msgstr "Repetera lösenord"
+msgstr "Upprepa lösenord"
 
 msgid "Password"
 msgstr "Lösenord"
