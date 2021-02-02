@@ -9,11 +9,11 @@
               <img src="{{url_for('static', filename="img/main_page.jpeg")}}" />
             </div>
             <div class="col-md-8">
-                <h3>{{ _('Help to georeference fungi from Uppland') }}</h3>
+                <h3>{{ _('Help us to georeference fungi from the Museum of Evolution') }}</h3>
                 <br/>
                 <p class="text-justify">{{ _('Are you fascinated by fungi, or do you enjoy studying maps? Maybe you are interested in old place names in Uppland? Now you have the chance to get acquainted with our museum material and contribute important information.') }}</p>
                 <p class="text-justify">{{ _('The Museum of Evolution in Uppsala has a large number of collected fungi that lack coordinates for the place where they were collected. Some are collected by famous mycologists from the 19th century when Uppsala was another city, and some recently. Choose a fungal group or a geographical area and start helping us with the coordinate determination. Join us on a journey through time and space and find out where the fungi once grew! ') }}</p>
-                <p class="text-justify">{{ _('To get started: go to the heading Projects - select project - and go to More info - Contribute now.') }}</p>
+                <p class="text-justify">{{ _('To get started: Choose a project below or visit our ongoing') }} <a href="{{ url_for('project.index') }}">{{ _('projects.') }}</a></p>
                 <p class="text-justify">{{ _('Thank you for your participation!') }}</p>
             </div>
         </div>
