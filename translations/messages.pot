@@ -1,14 +1,14 @@
 # Translations template for PROJECT.
-# Copyright (C) 2020 ORGANIZATION
+# Copyright (C) 2021 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-11-26 22:17+0100\n"
+"POT-Creation-Date: 2021-02-01 20:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,40 +26,40 @@ msgid "Home"
 msgstr ""
 
 #: themes/default/templates/_navbar.html:14
-#: themes/default/templates/account/index.html:15
-msgid "Community"
-msgstr ""
-
-#: themes/default/templates/_navbar.html:15
 #: themes/default/templates/projects/index.html:30
 #: themes/default/templates/stats/global.html:81
 msgid "Projects"
 msgstr ""
 
 #: themes/default/templates/_navbar.html:16
-msgid "Create"
+#: themes/default/templates/account/index.html:15
+msgid "Community"
 msgstr ""
 
 #: themes/default/templates/_navbar.html:17
+msgid "Create"
+msgstr ""
+
+#: themes/default/templates/_navbar.html:19
 #: themes/default/templates/home/_about.html:5
 msgid "About"
 msgstr ""
 
-#: themes/default/templates/_navbar.html:24
+#: themes/default/templates/_navbar.html:26
 msgid "My Profile"
 msgstr ""
 
-#: themes/default/templates/_navbar.html:25
+#: themes/default/templates/_navbar.html:27
 #: themes/default/templates/account/_helpers.html:7
 msgid "My Projects"
 msgstr ""
 
-#: themes/default/templates/_navbar.html:26
+#: themes/default/templates/_navbar.html:28
 #: themes/default/templates/account/_helpers.html:11
 msgid "My Settings"
 msgstr ""
 
-#: themes/default/templates/_navbar.html:29
+#: themes/default/templates/_navbar.html:31
 #: themes/default/templates/account/_helpers.html:9
 #: themes/default/templates/admin/categories.html:9
 #: themes/default/templates/admin/del_category.html:5
@@ -70,11 +70,11 @@ msgstr ""
 msgid "Admin Site"
 msgstr ""
 
-#: themes/default/templates/_navbar.html:32
+#: themes/default/templates/_navbar.html:34
 msgid "Sign Out"
 msgstr ""
 
-#: themes/default/templates/_navbar.html:36
+#: themes/default/templates/_navbar.html:38
 #: themes/default/templates/account/signin.html:8
 #: themes/default/templates/account/signin.html:10
 msgid "Sign in"
@@ -332,7 +332,7 @@ msgid "Not registered?"
 msgstr ""
 
 #: themes/default/templates/account/signin.html:14
-msgid "Sign up for free now"
+msgid "Sign up here"
 msgstr ""
 
 #: themes/default/templates/account/signin.html:19
@@ -823,17 +823,18 @@ msgstr ""
 msgid ""
 "The work with our natural history collections has traditionally been done"
 " through the cooperation of museum curators, taxonomic experts and "
-"enthusiastic volunteers. In the BioAtlas citizen science projects, we "
-"expand and develop this collaboration further, and enable collection of "
-"larger amounts of data. BioAtlas brings together various digitization "
-"projects, with the aim of improving museum collections with geographical "
-"data and link coordinates to each specimen."
+"volunteers. In the BioAtlas citizen science projects, we expand and "
+"develop this collaboration further, and enable collection of larger "
+"amounts of data. BioAtlas brings together various digitization projects, "
+"with the aim of improving museum collections with geographical data and "
+"link coordinates to each specimen. A large part of the museum's "
+"collection, especially the older material, lack that kind of information."
 msgstr ""
 
 #: themes/default/templates/custom/_about.html:9
 msgid ""
-"Coordinate information provides important information about our museum "
-"objects. It is required for analyses of locality data that further our "
+"Coordinate data provides important information about our museum objects. "
+"It is required for analyses of locality data that further our "
 "understanding of individual species distribution patterns and the "
 "biological diversity of fungi. Here you can help improve this knowledge "
 "by assigning coordinates to our observation records, and each "
@@ -876,13 +877,13 @@ msgstr ""
 
 #: themes/default/templates/custom/_about.html:50
 msgid ""
-"If you want to follow what is happening in BioAtlas citizen science, ask "
+"If you want to follow what is happening in BioAtlas Citizen Science, ask "
 "questions or come in contact with other volunteers\n"
 "              - join us on Facebook"
 msgstr ""
 
 #: themes/default/templates/custom/_index.html:12
-msgid "Help to georeference fungi from Uppland"
+msgid "Help us to georeference fungi from the Museum of Evolution"
 msgstr ""
 
 #: themes/default/templates/custom/_index.html:14
@@ -904,9 +905,11 @@ msgid ""
 msgstr ""
 
 #: themes/default/templates/custom/_index.html:16
-msgid ""
-"To get started: go to the heading Projects - select project - and go to "
-"More info - Contribute now."
+msgid "To get started: Choose a project below or visit our ongoing"
+msgstr ""
+
+#: themes/default/templates/custom/_index.html:16
+msgid "projects."
 msgstr ""
 
 #: themes/default/templates/custom/_index.html:17
@@ -2593,7 +2596,6 @@ msgstr ""
 #: themes/default/templates/stats/index.html:21
 msgid "Score"
 msgstr ""
-
 
 msgid "Featured"
 msgstr ""
